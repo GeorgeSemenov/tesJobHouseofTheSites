@@ -1,0 +1,16 @@
+include ../../blocks/favicon/favicon.pug
+include ../../blocks/main-screen/main-screen.pug
+include ../../blocks/header/header.pug
+doctype html
+html(lang="ru")
+  head
+    meta(charset = "utf-8")
+    meta(name="viewport", content="initial-scale=1.0, width=device-width")
+    title Дом Сайтов
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+    +favicon()
+  body
+    +header({
+      logoLink: "https://jegoteam.com/IJS/"
+    })(class="content-container")
+    main

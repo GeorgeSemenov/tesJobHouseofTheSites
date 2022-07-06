@@ -1,0 +1,10 @@
+.header__page-item {
+  margin-right: 26px;
+  @media (max-width: $lg - 1px) {
+    margin-right: 15px;
+  }
+  @media (max-width: $md - 1px) {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

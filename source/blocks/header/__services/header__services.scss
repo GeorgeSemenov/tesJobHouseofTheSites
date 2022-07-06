@@ -1,0 +1,11 @@
+.header__services {
+  display: flex;
+  justify-content: space-around;
+  max-width: 660px;
+  @include mx(auto);
+  @media (max-width: $md - 1px){
+    padding-top: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+}

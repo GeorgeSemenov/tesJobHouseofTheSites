@@ -1,0 +1,13 @@
+.header__nav-services {
+  width: 100%;
+  border-top: 1px solid $header__nav-services--BColor;
+  margin-top: 16px;
+  padding-top: 13px;
+  margin-bottom: 4px;
+  @media (max-width: $md - 1px){
+    width: 100%;
+    margin-top: 0px;
+    padding-top: 0px;
+    order: 5;
+  }
+}

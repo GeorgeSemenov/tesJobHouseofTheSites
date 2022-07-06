@@ -1,0 +1,14 @@
+.header__sandwich-ico-container {
+  display: none;
+  @media (max-width: $md - 1px){
+    order: 3;
+    width: 25px;
+    height: 16px;
+    position: relative;
+    display: block;
+    flex-shrink: 0;
+    cursor: pointer;
+    margin-top: 4px;
+    margin-right: 16px;
+  }
+}

@@ -1,0 +1,4 @@
+mixin header__service-href(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  a.header__service-href(href="#!")&attributes(attributes)!=modifier.text

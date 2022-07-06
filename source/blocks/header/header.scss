@@ -1,0 +1,71 @@
+@import '__sandwich-ico/header__sandwich-ico';
+@import '__sandwich-ico-container/header__sandwich-ico-container';
+@import '__logotype/header__logotype';
+@import '__service-href/header__service-href';
+@import '__service-item/header__service-item';
+@import '__services/header__services';
+@import '__nav-services/header__nav-services';
+@import '__emergency-tel/header__emergency-tel';
+@import '__emergency-text/header__emergency-text';
+@import '__emergency-text-container/header__emergency-text-container';
+@import '__emergency-img/header__emergency-img';
+@import '__emergency-block/header__emergency-block';
+@import '__page-href/header__page-href';
+@import '__page-item/header__page-item';
+@import '__pages/header__pages';
+@import '__nav-pages/header__nav-pages';
+@import '__search/header__search';
+@import '__search-pic/header__search-pic';
+@import '../logotype/logotype';
+.header {
+  font-family: 'PT_Sans' ,"Georgia" , "Serif";
+  display: flex;
+  max-width: 1200px;
+  @include mx(auto);
+  flex-wrap: wrap;
+  position: relative;
+  @media (max-width: $md - 1px){
+    padding-top: 6px;
+    height: 34px;
+    overflow: hidden;
+    @include transition();
+    margin-bottom: 9px;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 39px;
+      height: 1px;
+      background-color: $header__mobile-devider--BGColor;
+    }
+  }
+  @media print{
+    display: none;
+  }
+}
+
+/*
+//нужно создать блок logotype в нём будет логотип
+//в img/svg/ должен быть файл logoSVG.pug (это картинка логотипа)
+//в img/svg/ должен быть файл magnifying-glass-svg.pug это лупа для поиска
+
+pug variables:
+  pages // header__pages.pug отображает количество страниц и ссылается на них.
+
+
+colors:
+  $header__page-href--color: $black; //
+  $header__page-href-hover--color : $black; //
+  $header__nav-pages-after--BGColor: $black;
+  $header__emergency-text--color: $black;
+  $header__emergency-tel--color: $black;
+  $header__emergency-tel-hover--color : $black;
+  $header__service-href--color: $black;
+  $header__service-href-hover--color : $black;
+  $header__nav-services--BColor: $black;
+  $header__sandwich-ico--BGColor: $black;
+  $header__sandwich-ico-after-before--BGColor : $black;
+  $header__mobile-devider--BGColor: $black;
+
+*/

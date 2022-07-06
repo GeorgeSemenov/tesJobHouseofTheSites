@@ -1,0 +1,14 @@
+.header__page-href {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: $header__page-href--color;
+  @media (max-width: $md - 1px){
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  &:hover{
+    color: $header__page-href-hover--color;
+  }
+}

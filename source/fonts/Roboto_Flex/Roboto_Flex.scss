@@ -1,0 +1,8 @@
+//Пути нужно указывать относительно scss файла, который будет в pages, допустим index.scss
+@font-face {
+  font-family: 'Roboto_Flex';
+  font-style: normal;
+  src:  local('☺'), 
+        url('../../fonts/Roboto_Flex/RobotoFlex-Regular.woff2') format('woff2'),
+        url('../../fonts/Roboto_Flex/RobotoFlex-Regular.woff') format('woff');
+}

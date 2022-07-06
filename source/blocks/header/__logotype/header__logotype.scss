@@ -1,0 +1,18 @@
+.header__logotype {
+  position: absolute;
+  top: 12px;
+  left: 40.25%;
+  @media (max-width: $lg - 1px) {
+    left: 50%;
+    width: 150px
+  }
+  @media (max-width: $md - 1px){
+    margin-left: 10px;
+    order:1;
+    top: auto;
+    left: auto;
+    position: static;
+    width: 117px;
+    height: 29px;
+  }
+}

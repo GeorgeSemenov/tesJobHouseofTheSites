@@ -1,0 +1,9 @@
+.header__pages {
+  display: flex;
+  @media (max-width: $md - 1px){
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+  }
+}

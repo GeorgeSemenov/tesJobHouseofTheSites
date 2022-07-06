@@ -1,0 +1,6 @@
+mixin header__pages(modifier)
+  ul.header__pages&attributes(attributes)
+    if modifier["pages"] == undefined
+      - modifier["pages"] = [{text: "empty__pages"}];
+    each page in modifier.pages
+      +header__page-item(page)

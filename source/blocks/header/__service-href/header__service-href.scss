@@ -1,0 +1,11 @@
+.header__service-href {
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: $header__service-href--color;
+
+  &:hover{
+    color: $header__service-href-hover--color;
+  }
+}

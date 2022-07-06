@@ -1,0 +1,18 @@
+/* Компоненты */
+@import '../vendor/UnCss';/* т.к. он сбрасывает все стили */
+@import '../JS-components/onePageScroll/onepage-scroll';
+
+/* Шрифты */
+
+/* идут перед миксинами, т.к. шрифты могут быть использованны в миксинах */
+@import '../fonts/allFonts';
+
+/* самодельные стили */
+@import 'variables';
+@import 'mixins';
+@import 'colors';
+@import 'global';
+
+@import '../blocks/main-screen/main-screen';
+@import '../blocks/header/header';
+@import '../blocks/logotype/logotype';

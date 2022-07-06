@@ -1,0 +1,10 @@
+.header__emergency-tel {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: $header__emergency-tel--color;
+  &:hover{
+    color: $header__emergency-tel-hover--color;
+  }
+}

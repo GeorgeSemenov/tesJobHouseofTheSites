@@ -1,0 +1,24 @@
+.header__nav-pages {
+  margin-top: 35px;
+  display: flex;
+  &:before{
+    margin-top: -5px;
+    content: '';
+    display: block;
+    width : 1px;
+    height: 20px;
+    background-color: $header__nav-pages-after--BGColor;
+    margin-right: 31px;
+    @media (max-width: $lg - 1px) {
+        margin-right: 15px;
+    }
+  }
+  @media (max-width: $md - 1px){
+    order: 4;
+    margin-top: 0;
+    width: 100%;
+    &:before{
+      display: none;
+    }
+  }
+}
