@@ -1,2 +1,4 @@
 mixin header__page-href(modifier)
-  a.header__page-href(href="#!")&attributes(attributes)!=modifier.text
+  if modifier["pageHref"] == undefined
+    - modifier["pageHref"] = "#!";
+  a.header__page-href(href=modifier.pageHref)&attributes(attributes)!=modifier.text

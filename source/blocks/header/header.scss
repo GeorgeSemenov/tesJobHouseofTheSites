@@ -5,11 +5,6 @@
 @import '__service-item/header__service-item';
 @import '__services/header__services';
 @import '__nav-services/header__nav-services';
-@import '__emergency-tel/header__emergency-tel';
-@import '__emergency-text/header__emergency-text';
-@import '__emergency-text-container/header__emergency-text-container';
-@import '__emergency-img/header__emergency-img';
-@import '__emergency-block/header__emergency-block';
 @import '__page-href/header__page-href';
 @import '__page-item/header__page-item';
 @import '__pages/header__pages';
@@ -51,21 +46,18 @@
 //в img/svg/ должен быть файл magnifying-glass-svg.pug это лупа для поиска
 
 pug variables:
-  pages // header__pages.pug отображает количество страниц и ссылается на них.
-
-
+  pages:[{text: "pageTitle", pageHref: "pageHref"}] // header__pages.pug отображает количество страниц и ссылается на них. text - текст, который отображается в ссылке, pageHref - сама ссылка.
+  logoHref,//Ссылка на логотип.
+  services: [{text: "serviceTitle", serviceHref: "#!"}]// список сервисов, text - текст отображающися и описывающий сервис,  serviceHref - ссылка на эту услугу.
 colors:
-  $header__page-href--color: $black; //
-  $header__page-href-hover--color : $black; //
-  $header__nav-pages-after--BGColor: $black;
-  $header__emergency-text--color: $black;
-  $header__emergency-tel--color: $black;
-  $header__emergency-tel-hover--color : $black;
-  $header__service-href--color: $black;
-  $header__service-href-hover--color : $black;
-  $header__nav-services--BColor: $black;
-  $header__sandwich-ico--BGColor: $black;
-  $header__sandwich-ico-after-before--BGColor : $black;
-  $header__mobile-devider--BGColor: $black;
+  $header__page-href--color: $black; // цвет ссылки на страницу header__page-href.scss
+  $header__page-href-hover--color : $black; //цвет ссылки на страницу, когда на неё наводят header__page-href.scss
+  $header__nav-pages-after--BGColor: $black; // Линия которая разделяет полосу поиска и список страничек
+  $header__service-href--color: $black; // текст ссылки на сервисы
+  $header__service-href-hover--color : $black; // текст ссылки на сервисы при наведении на них
+  $header__nav-services--BorderTopColor: $black; // цвет верхней гранницы отделяющей сервисы от навигации с логотипом
+  $header__sandwich-ico--BGColor: $black; // цвет средней полоски бутерброда
+  $header__sandwich-ico-after-before--BGColor : $header__sandwich-ico--BGColor; //цвет верхней и нижней полосок бутерброда
+  $header__mobile-devider--BGColor: $black; // цвет полоски, которая, на мобильных экранах, отделяет хедер от остального контента.
 
 */

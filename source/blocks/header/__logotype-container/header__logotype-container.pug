@@ -1,0 +1,5 @@
+mixin header__logotype-container(modifier)
+  if modifier["logoHref"] == undefined
+    - modifier["logoHref"] = "#!";
+  a.header__logotype-container(href=modifier.logoHref)&attributes(attributes)
+    +logotype(modifier)(class="header__logotype")
