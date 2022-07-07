@@ -1,0 +1,7 @@
+.header__service-subitem-href {
+  color: $header__service-subitem-href--Color;
+
+  &:hover{
+    color: $header__service-subitem-href-hover--Color;
+  }
+}

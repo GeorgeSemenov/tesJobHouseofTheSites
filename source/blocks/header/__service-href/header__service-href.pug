@@ -3,4 +3,9 @@ mixin header__service-href(modifier)
     - modifier["text"] = "empty__text";
   if modifier["serviceHref"] == undefined
     - modifier["serviceHref"] = "#!";
-  a.header__service-href(href=modifier.serviceHref)&attributes(attributes)!=modifier.text
+  -let superClass = ''
+  if modifier["subItems"] != undefined
+    - superClass = "header__service-href_dropdown";
+  a.header__service-href(href=modifier.serviceHref class=superClass)&attributes(attributes)!=modifier.text
+  if modifier["subItems"] != undefined
+    +header__service-submenu(modifier)

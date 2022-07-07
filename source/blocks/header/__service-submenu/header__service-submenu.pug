@@ -1,0 +1,6 @@
+mixin header__service-submenu(modifier)
+  ul.header__service-submenu&attributes(attributes)
+    each subitem in modifier.subItems
+      if subitem["modifier"] == undefined
+        - modifier["modifier"] = "";
+      +header__service-subitem(subitem)(class=subitem.modifier)

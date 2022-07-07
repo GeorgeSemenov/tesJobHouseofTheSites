@@ -1,4 +1,5 @@
 .header__service-href {
+  position: relative;
   text-decoration: none;
   font-size: 18px;
   line-height: 23px;
@@ -7,5 +8,17 @@
 
   &:hover{
     color: $header__service-href-hover--color;
+  }
+  &_dropdown{
+    &:after{
+      transition: transform 0.2s linear,height 0.2s linear;
+      color: $header__service-href_dropdown-after--Color;
+      content: '\25bc';
+      position: absolute;
+      right: -20px;
+      top: 0px;
+    }
+    &_pic-rotated:after{transform: rotate(180deg);}
+    &:hover:after{color: $header__service-href_dropdown-after-hover--Color;}
   }
 }

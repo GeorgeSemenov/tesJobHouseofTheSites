@@ -1,0 +1,6 @@
+mixin header__service-subitem-href(modifier)
+  if modifier["subItemHref"] == undefined
+    - modifier["subItemHref"] = "#!";
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__subItemText";
+  a.header__service-subitem-href(href=modifier.subItemHref)&attributes(attributes)!=modifier.text
