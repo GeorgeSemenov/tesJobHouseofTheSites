@@ -13,6 +13,7 @@
   @media (max-width: $md - 1px){
     opacity: 1;
     position: relative;
+    display: none;
 
     &_show{
       top: 0px;

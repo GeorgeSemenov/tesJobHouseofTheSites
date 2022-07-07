@@ -14,6 +14,7 @@
     }
   }
   @media (max-width: $md - 1px){
+    display: none;
     order: 4;
     margin-top: 0;
     width: 100%;

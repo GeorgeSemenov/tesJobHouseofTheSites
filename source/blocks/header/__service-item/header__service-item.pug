@@ -1,3 +1,8 @@
 mixin header__service-item(modifier)
+  -let superClass = ''
+  if modifier["subItems"] != undefined
+    - superClass = "header__service-href_dropdown";
   li.header__service-item&attributes(attributes)
-    +header__service-href(modifier)
+    +header__service-href(modifier)(class=superClass)
+    if modifier["subItems"] != undefined
+      +header__service-submenu(modifier)

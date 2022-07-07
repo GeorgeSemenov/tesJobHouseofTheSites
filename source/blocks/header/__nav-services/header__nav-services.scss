@@ -5,6 +5,7 @@
   padding-top: 13px;
   margin-bottom: 4px;
   @media (max-width: $md - 1px){
+    display: none;
     width: 100%;
     margin-top: 0px;
     padding-top: 0px;

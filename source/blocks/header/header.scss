@@ -1,6 +1,3 @@
-@import '__service-subitem-href/header__service-subitem-href';
-@import '__service-subitem/header__service-subitem';
-@import '__service-submenu/header__service-submenu';
 @import '__sandwich-ico/header__sandwich-ico';
 @import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__logotype/header__logotype';
@@ -24,7 +21,7 @@
   position: relative;
   @media (max-width: $md - 1px){
     padding-top: 6px;
-    height: 34px;
+    // height: 34px;
     overflow: hidden;
     @include transition();
     margin-bottom: 9px;
@@ -42,18 +39,15 @@
     display: none;
   }
 }
-
-/*
 //нужно создать блок logotype в нём будет логотип
 //в img/svg/ должен быть файл logoSVG.pug (это картинка логотипа)
 //в img/svg/ должен быть файл magnifying-glass-svg.pug это лупа для поиска
 //На мобилках устанавливается величина хедера через скрипт header.js нужно изменять переменную headerVisiblePartHeight
-
+/*
 pug variables:
   pages:[{text: "pageTitle", pageHref: "pageHref"}] // header__pages.pug отображает количество страниц и ссылается на них. text - текст, который отображается в ссылке, pageHref - сама ссылка.
   logoHref,//Ссылка на логотип.
   services: [{text: "serviceTitle", serviceHref: "#!", modifier: "additionalClass", subItems:[{text: "subItemTitle", subItemHref: "#!", modifier: "additionalClass"}]}]// список сервисов, text - текст отображающися и описывающий сервис,  serviceHref - ссылка на эту услугу. Если указать subItems то добавляется модификатор для header__service-href _dropdown (добавляющий треугольничек или другой символ)
-
 colors:
   $header__page-href--color: $black; // цвет ссылки на страницу header__page-href.scss
   $header__page-href-hover--color : $black; //цвет ссылки на страницу, когда на неё наводят header__page-href.scss
