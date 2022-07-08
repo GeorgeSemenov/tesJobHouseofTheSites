@@ -1,3 +1,6 @@
+@import '__service-href/header__service-href';
+@import '__service-subitem/header__service-subitem';
+@import '__service-submenu/header__service-submenu';
 @import '__sandwich-ico/header__sandwich-ico';
 @import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__logotype/header__logotype';
@@ -5,12 +8,6 @@
 @import '__service-item/header__service-item';
 @import '__services/header__services';
 @import '__nav-services/header__nav-services';
-@import '__page-href/header__page-href';
-@import '__page-item/header__page-item';
-@import '__pages/header__pages';
-@import '__nav-pages/header__nav-pages';
-@import '__search/header__search';
-@import '__search-pic/header__search-pic';
 @import '../logotype/logotype';
 .header {
   font-family: 'PT_Sans' ,"Georgia" , "Serif";
@@ -41,17 +38,11 @@
 }
 //нужно создать блок logotype в нём будет логотип
 //в img/svg/ должен быть файл logoSVG.pug (это картинка логотипа)
-//в img/svg/ должен быть файл magnifying-glass-svg.pug это лупа для поиска
-//На мобилках устанавливается величина хедера через скрипт header.js нужно изменять переменную headerVisiblePartHeight
 /*
 pug variables:
-  pages:[{text: "pageTitle", pageHref: "pageHref"}] // header__pages.pug отображает количество страниц и ссылается на них. text - текст, который отображается в ссылке, pageHref - сама ссылка.
   logoHref,//Ссылка на логотип.
   services: [{text: "serviceTitle", serviceHref: "#!", modifier: "additionalClass", subItems:[{text: "subItemTitle", subItemHref: "#!", modifier: "additionalClass"}]}]// список сервисов, text - текст отображающися и описывающий сервис,  serviceHref - ссылка на эту услугу. Если указать subItems то добавляется модификатор для header__service-href _dropdown (добавляющий треугольничек или другой символ)
 colors:
-  $header__page-href--color: $black; // цвет ссылки на страницу header__page-href.scss
-  $header__page-href-hover--color : $black; //цвет ссылки на страницу, когда на неё наводят header__page-href.scss
-  $header__nav-pages-after--BGColor: $black; // Линия которая разделяет полосу поиска и список страничек
   $header__service-href--color: $black; // текст ссылки на сервисы
   $header__service-href-hover--color : $black; // текст ссылки на сервисы при наведении на них
   $header__service-href_dropdown-after--Color: $black; // цвет треугольника для подменю в сервисах

@@ -1,22 +1,12 @@
 .header__service-submenu {
+  display: none;
   position:absolute;
   left:0;
-  opacity:0;
   z-index: 1;
   transition: opacity .25s ease;
-
-  &_show{
-    opacity: 1;
-    top: 20px;
-  }
 
   @media (max-width: $md - 1px){
     opacity: 1;
     position: relative;
-    display: none;
-
-    &_show{
-      top: 0px;
-    }
   }
 }
