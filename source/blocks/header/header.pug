@@ -1,3 +1,5 @@
+include __lk-link/header__lk-link.pug
+include __private-area/header__private-area.pug
 include __service-subitem-href/header__service-subitem-href.pug
 include __service-subitem/header__service-subitem.pug
 include __service-submenu/header__service-submenu.pug
@@ -11,10 +13,14 @@ include __services/header__services.pug
 include __nav-services/header__nav-services.pug
 include ../logotype/logotype.pug
 include ../../img/svg/magnifying-glass-svg.pug
+include ../button/button.pug
+include ../contacts/contacts.pug
+include ../../img/SVG/avatar.pug
 mixin header(modifier)
   if modifier == undefined
     - modifier = {}
   header.header&attributes(attributes)
     +header__logotype-container(modifier)
+    +header__private-area(modifier)
     +header__sandwich-ico-container(modifier)
     +header__nav-services(modifier)

@@ -1,3 +1,7 @@
+@import '__avatar/header__avatar';
+@import '__button/header__button';
+@import '__lk-link/header__lk-link';
+@import '__private-area/header__private-area';
 @import '__service-href/header__service-href';
 @import '__service-subitem/header__service-subitem';
 @import '__service-submenu/header__service-submenu';
@@ -10,6 +14,7 @@
 @import '__nav-services/header__nav-services';
 @import '../logotype/logotype';
 .header {
+  background-color: $header--BGColor;
   font-family: 'PT_Sans' ,"Georgia" , "Serif";
   display: flex;
   max-width: 1200px;

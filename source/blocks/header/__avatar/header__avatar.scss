@@ -1,0 +1,11 @@
+.header__avatar {
+  circle{
+    fill: $header__avatar--Fill;
+  }
+
+  &:hover{
+    circle{
+     fill:$header__avatar-hover--Fill;
+    }
+  }
+}

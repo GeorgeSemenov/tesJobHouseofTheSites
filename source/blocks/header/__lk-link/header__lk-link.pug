@@ -1,0 +1,5 @@
+mixin header__lk-link(modifier)
+  if modifier["lkLink"] == undefined
+    - modifier["lkLink"] = "#!";
+  a.header__lk-link(href=modifier.lkLink)&attributes(attributes)
+    +avatar(modifier)(class="header__avatar")

@@ -3,17 +3,15 @@ $transparent: transparent;
 $inherit: inherit;
 
 $white: #fff;//Не удалять, используется в global.css
-$black: #000;//Не удалять, используется в global.css
+$black: #262626;//Не удалять, используется в global.css
 
+$blue: #67A8D2;//голубенький, как на аватаре.
 $orange: #FA6232;
 
 /* variables with sense */
 
 /* *********************************************************************** */
-
-$header__page-href--color: red; /**/
-$header__page-href-hover--color : green; /**/
-$header__nav-pages-after--BGColor: green;
+$header--BGColor: $black;
 $header__service-href--color: purple;
 $header__service-href-hover--color : $black;
 $header__nav-services--BorderTopColor: yellow;//
@@ -25,3 +23,5 @@ $header__service-href_dropdown-after--Color: $black;
 $header__service-href_dropdown-after-hover--Color: red;
 $header__service-subitem-href--Color: $black;
 $header__service-subitem-href-hover--Color: green;
+$header__avatar--Fill: $blue;//цвет фона аватара.
+$header__avatar-hover--Fill: darken($header__avatar--Fill, 20%);//цвет фона аватара при наведении.
