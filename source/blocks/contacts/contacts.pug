@@ -1,2 +1,15 @@
+include __description/contacts__description.pug
+include __text-container/contacts__text-container.pug
+include __contact/contacts__contact.pug
+include __text/contacts__text.pug
+include ../../img/SVG/mail_icon.pug
+include ../../img/SVG/phone_icon.pug
+include ../../img/SVG/location.pug
 mixin contacts(modifier)
-  .contacts&attributes(attributes)
+  if modifier == undefined
+    - modifier = {};
+  if modifier["contacts"] == undefined
+    - modifier["contacts"] = [{}];
+  ul.contacts&attributes(attributes)
+    each contact in modifier.contacts
+      +contacts__contact(contact)(class=contact.modifier)

@@ -1,0 +1,10 @@
+mixin contacts__contact(modifier)
+  li.contacts__contact&attributes(attributes)
+    case modifier.pic
+      when 'mail'
+        +mail_icon(modifier)
+      when 'phone'
+        +phone_icon(modifier)
+      when 'location'
+        +location(modifier)
+    +contacts__text-container(modifier)
