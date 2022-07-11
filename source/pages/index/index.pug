@@ -11,25 +11,25 @@ html(lang="ru")
     +favicon()
   body
     +header({
+      contacts:[
+        {
+          pic: 'phone',
+          texts: [
+            {text: "+7 (495) 123-45-56", modifier: ''}
+          ],
+        },
+        {
+          pic: 'mail',
+          texts: [
+            {text: "support@wshost.ru"},
+            {text: "(поддержка ", modifier: 'contacts_text_gray'},
+            {text: "24/7"},
+            {text: ")", modifier: 'contacts_text_gray'},
+          ],
+        },
+      ],
       services:[
         {
-          contacts:[
-            {
-              pic: 'phone',
-              texts: [
-                {text: "+7 (495) 123-45-56", modifier: ''}
-              ],
-            },
-            {
-              pic: 'mail',
-              texts: [
-                {text: "support@wshost.ru"},
-                {text: "(поддержка ", modifier: 'contacts_text_gray'},
-                {text: "24/7"},
-                {text: ")", modifier: 'contacts_text_gray'},
-              ],
-            },
-          ],
           text: `service1 with dropdown`,
           modifier: 'puf',
           subItems: [

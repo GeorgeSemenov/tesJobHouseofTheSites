@@ -1,11 +1,11 @@
 mixin contacts__text(modifier)
-  if modifier["texts"] == undefined
-    - modifier["texts"] = [{}];
-  span!=JSON.stringify(modifier.texts)
-  each text in modifier.texts
-    if text["text"] == undefined
-      - text["text"] = "empty__contact__text";
-    if text["modifier"] == undefined
-      - text["modifier"] = "";
-    p.contacts__text(class=text.modifier)&attributes(attributes)!=text.text
+  if modifier["text"] == undefined
+    - modifier["text"] = '';
+  if modifier["highlightedText"] == undefined
+    - modifier["highlightedText"] = "";
+  if modifier["textAfterHighlightedText"] == undefined
+    - modifier["textAfterHighlightedText"] = "";
+  p.contacts__text&attributes(attributes)!=modifier.text
+    span!=modifier.highlightedText
+    |modifier.textAfterHighlightedText
     

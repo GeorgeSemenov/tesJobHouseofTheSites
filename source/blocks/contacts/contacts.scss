@@ -1,4 +1,15 @@
 .contacts {}
+/*
+  contacts:[
+    {
+      link: "#!",
+      pic: 'mail/phone/location',
+      text: 'str',
+      highlightedText: '',//этот текст идёт после обычного текста
+      textAfterHighlightedText: '',
+    }
+  ]
+*/
 @import '__contact/contacts__contact';
 @import '__text/contacts__text';
 @import '__text-container/contacts__text-container';

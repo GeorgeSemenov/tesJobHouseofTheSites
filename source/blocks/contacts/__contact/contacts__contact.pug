@@ -1,5 +1,6 @@
 mixin contacts__contact(modifier)
   li.contacts__contact&attributes(attributes)
+    a(href)
     case modifier.pic
       when 'mail'
         +mail_icon(modifier)
