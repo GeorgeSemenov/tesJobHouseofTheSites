@@ -1,1 +1,6 @@
-.contacts__contact {}
+.contacts__contact {
+
+  & a {
+    display: flex;
+  }
+}

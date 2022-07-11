@@ -13,19 +13,15 @@ html(lang="ru")
     +header({
       contacts:[
         {
+          link:"tel:+74951234556",
           pic: 'phone',
-          texts: [
-            {text: "+7 (495) 123-45-56", modifier: ''}
-          ],
+          text: "+7 (495) 123-45-56",
         },
         {
+          link: "mailto:support@wshost.ru",
           pic: 'mail',
-          texts: [
-            {text: "support@wshost.ru"},
-            {text: "(поддержка ", modifier: 'contacts_text_gray'},
-            {text: "24/7"},
-            {text: ")", modifier: 'contacts_text_gray'},
-          ],
+          text: "support@wshost.ru",
+          substr: ["(поддержка ","24/7",")"],
         },
       ],
       services:[

@@ -1,16 +1,24 @@
-.contacts {}
+.contacts {
+  color: $contacts--Color;
+  font-family: 'SF Pro Display' ,Arial , Sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+}
 /*
   contacts:[
     {
       link: "#!",
       pic: 'mail/phone/location',
-      text: 'str',
-      highlightedText: '',//этот текст идёт после обычного текста
-      textAfterHighlightedText: '',
+      description: "текст сверху",
+      text: 'str',//текст по серединке
+      substr:['массив','контейнеров текста','которые чередуются с модификтором и без',],
+      },
     }
-  ]
 */
 @import '__contact/contacts__contact';
 @import '__text/contacts__text';
 @import '__text-container/contacts__text-container';
 @import '__description/contacts__description';
+@import '__substring/contacts__substring';
+@import '__pic/contacts__pic';

@@ -1,4 +1,8 @@
 mixin contacts__text-container(modifier)
   .contacts__text-container&attributes(attributes)
-    +contacts__description(modifier)
-    +contacts__text(modifier)
+    if modifier["description"] != undefined
+      +contacts__description(modifier)
+    if modifier["text"] != undefined
+      +contacts__text(modifier)
+    if modifier["substr"] != undefined
+      +contacts__substring(modifier)

@@ -12,3 +12,8 @@ main{
   max-width: 1128px;
   @include mx(auto);
 }
+
+a {
+  text-decoration: none;
+  color: $inherit;
+}

@@ -1,11 +1,4 @@
 mixin contacts__text(modifier)
   if modifier["text"] == undefined
     - modifier["text"] = '';
-  if modifier["highlightedText"] == undefined
-    - modifier["highlightedText"] = "";
-  if modifier["textAfterHighlightedText"] == undefined
-    - modifier["textAfterHighlightedText"] = "";
   p.contacts__text&attributes(attributes)!=modifier.text
-    span!=modifier.highlightedText
-    |modifier.textAfterHighlightedText
-    

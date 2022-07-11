@@ -1,11 +1,11 @@
 mixin contacts__contact(modifier)
   li.contacts__contact&attributes(attributes)
-    a(href)
-    case modifier.pic
-      when 'mail'
-        +mail_icon(modifier)
-      when 'phone'
-        +phone_icon(modifier)
-      when 'location'
-        +location(modifier)
-    +contacts__text-container(modifier)
+    a(href=modifier.link)
+      case modifier.pic
+        when 'mail'
+          +mail_icon(modifier)(class="contacts__pic")
+        when 'phone'
+          +phone_icon(modifier)(class="contacts__pic")
+        when 'location'
+          +location(modifier)(class="contacts__pic")
+      +contacts__text-container(modifier)
