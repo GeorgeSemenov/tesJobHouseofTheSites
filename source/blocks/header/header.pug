@@ -1,3 +1,5 @@
+include __bottom-content/header__bottom-content.pug
+include __top-content/header__top-content.pug
 include __lk-link/header__lk-link.pug
 include __private-area/header__private-area.pug
 include __service-subitem-href/header__service-subitem-href.pug
@@ -19,8 +21,5 @@ mixin header(modifier)
   if modifier == undefined
     - modifier = {}
   header.header&attributes(attributes)
-    +header__logotype-container(modifier)
-    +contacts(modifier)(class="header__contacts")
-    +header__private-area(modifier)
-    +header__sandwich-ico-container(modifier)
-    +header__nav-services(modifier)
+    +header__top-content(modifier)(class="content-container")
+    +header__bottom-content(modifier)

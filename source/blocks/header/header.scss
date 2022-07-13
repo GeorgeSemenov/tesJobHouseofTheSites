@@ -1,3 +1,6 @@
+@import '__bottom-content/header__bottom-content';
+@import '__top-content/header__top-content';
+@import '__logotype-container/header__logotype-container';
 @import '__avatar/header__avatar';
 @import '__button/header__button';
 @import '__lk-link/header__lk-link';
@@ -14,16 +17,13 @@
 @import '__nav-services/header__nav-services';
 @import '../logotype/logotype';
 .header {
+  color: $header--Color;
   background-color: $header--BGColor;
   font-family: 'PT_Sans' ,"Georgia" , "Serif";
-  display: flex;
-  max-width: 1200px;
-  @include mx(auto);
   flex-wrap: wrap;
   position: relative;
   @media (max-width: $md - 1px){
     padding-top: 6px;
-    // height: 34px;
     overflow: hidden;
     @include transition();
     margin-bottom: 9px;

@@ -3,7 +3,7 @@ mixin contacts__substring(modifier)
     - modifier["substr"][0] = "empty__substr";
   p.contacts__substring&attributes(attributes)
     each text, index in modifier.substr
-      if ((index+1) % 2 == 0)
+      if (!((index+1) % 2 == 0))
         span!=text
       else
         |#{text}
