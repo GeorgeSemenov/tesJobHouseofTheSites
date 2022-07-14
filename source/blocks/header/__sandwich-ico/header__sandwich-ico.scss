@@ -27,6 +27,9 @@
   &:after {/*третья линия бутерброда*/
     top: -7px;/*третья линия будет ниже*/
   }
+  @media (max-width: $md - 1px){
+    margin-top: -3px;
+  }
 }
 
 .header_expanded{

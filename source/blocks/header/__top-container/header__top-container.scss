@@ -1,4 +1,7 @@
 .header__top-container {
   display: flex;
   justify-content: space-between;
+  @media (max-width: $md - 1px){
+    flex-wrap: wrap;
+  }
 }

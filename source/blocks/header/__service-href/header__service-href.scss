@@ -1,13 +1,16 @@
 .header__service-href {
   text-transform: uppercase;
   position: relative;
-  font-size: 17px;
+  font-size: 18.5px;
   line-height: 150%;
 
-  color: $header__service-href--color;
+  color: $header__service-href--Color;
 
   &:hover{
-    color: $header__service-href-hover--color;
+    color: $header__service-href-hover--Color;
+  }
+  &:active{
+    color: $header__service-href-active--Color;
   }
   &_dropdown{
     &:after{

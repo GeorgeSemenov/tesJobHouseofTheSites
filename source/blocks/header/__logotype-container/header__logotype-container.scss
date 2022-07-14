@@ -1,3 +1,6 @@
 .header__logotype-container {
   position: relative;
+  @media (max-width: $md - 1px){
+    order:1;
+  }
 }

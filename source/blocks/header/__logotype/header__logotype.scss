@@ -1,12 +1,10 @@
 .header__logotype {
     
   @media (max-width: $md - 1px){
-    margin-left: 10px;
-    order:1;
     top: auto;
     left: auto;
     position: static;
-    width: 117px;
-    height: 29px;
+    width: 75px;
+    height: 45px;
   }
 }

@@ -12,20 +12,19 @@ $orange: #FA6232;
 
 /* *********************************************************************** */
 $header--Color: $white;
-$header--BGColor: $black;
-$header__service-href--color: $black;
-$header__service-href-hover--color : darken($header__service-href--color,20%);
-$header__sandwich-ico--BGColor: $black;
-$header__sandwich-ico-after-before--BGColor : $black;
-$header__mobile-devider--BGColor: red;
-$header__top-content--BGColor: $inherit;
+$header--BGColor: $transparent;
+$header__service-href--Color: $black;
+$header__service-href-hover--Color : lighten($header__service-href--Color,30%);
+$header__service-href-active--Color : lighten($header__service-href--Color,50%);
+$header__sandwich-ico--BGColor: $orange;
+$header__sandwich-ico-after-before--BGColor : $header__sandwich-ico--BGColor;
+$header__top-content--BGColor: $black;
 $header__bottom-content--BGColor: $white;
 
 $header__service-href_dropdown-after--Color: $black;
 $header__service-href_dropdown-after-hover--Color: red;
 $header__service-subitem-href--Color: $black;
 $header__service-subitem-href-hover--Color: green;
-$header__service-subitem--Color: $black;
 $header__avatar--Fill: $blue;//цвет фона аватара.
 $header__avatar-hover--Fill: darken($header__avatar--Fill, 20%);//цвет фона аватара при наведении.
 

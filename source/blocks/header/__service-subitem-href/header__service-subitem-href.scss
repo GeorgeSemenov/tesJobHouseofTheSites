@@ -1,5 +1,7 @@
 .header__service-subitem-href {
   color: $header__service-subitem-href--Color;
+  font-size: 17px;
+  line-height: 150%;
 
   &:hover{
     color: $header__service-subitem-href-hover--Color;
