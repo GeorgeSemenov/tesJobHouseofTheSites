@@ -1,0 +1,6 @@
+.header__contacts {
+  margin-right: 40px;
+  @media (max-width: $md - 1px){
+    margin-right: 0px;
+  }
+}

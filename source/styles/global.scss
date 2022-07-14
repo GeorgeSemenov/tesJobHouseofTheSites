@@ -12,8 +12,9 @@ main{
 }
 
 .content-container{
-  max-width: 1200px;
+  max-width: 1180px;
   @include mx(auto);
+  box-sizing: border-box;
 }
 
 a {

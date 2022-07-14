@@ -1,9 +1,5 @@
 .header__top-content {
-  display: flex;
-  max-width: 1180px;
-  padding-left: 8px  ;
+  background-color: $header__top-content--BGColor;
   padding-top: 10px ;
-  box-sizing: border-box;
   @include mx(auto);
-  justify-content: space-between;
 }

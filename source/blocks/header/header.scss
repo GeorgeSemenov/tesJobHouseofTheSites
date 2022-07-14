@@ -1,3 +1,6 @@
+@import '__top-container/header__top-container';
+@import '__bottom-container/header__bottom-container';
+@import '__contacts/header__contacts';
 @import '__bottom-content/header__bottom-content';
 @import '__top-content/header__top-content';
 @import '__logotype-container/header__logotype-container';
@@ -11,7 +14,6 @@
 @import '__sandwich-ico/header__sandwich-ico';
 @import '__sandwich-ico-container/header__sandwich-ico-container';
 @import '__logotype/header__logotype';
-@import '__service-href/header__service-href';
 @import '__service-item/header__service-item';
 @import '__services/header__services';
 @import '__nav-services/header__nav-services';
