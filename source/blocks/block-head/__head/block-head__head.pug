@@ -1,0 +1,6 @@
+mixin block-head__head(modifier)
+  if modifier["tag"] == undefined
+    - modifier["tag"] = "h2";
+  if modifier["text"] == undefined
+    - modifier["text"] = "block-head-empty__text";
+  #{modifier.tag}.block-head__head&attributes(attributes)!=modifier.text

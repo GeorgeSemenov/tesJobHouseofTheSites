@@ -1,0 +1,4 @@
+mixin block-head__description(modifier)
+  if modifier["description"] == undefined
+    - modifier["description"] = "block-head-empty__description";
+  p.block-head__description&attributes(attributes)!=modifier.description

@@ -1,0 +1,8 @@
+include __description/block-head__description.pug
+include __head/block-head__head.pug
+mixin block-head(modifier)
+  if modifier == undefined
+    - modifier = {};
+  .block-head&attributes(attributes)
+    +block-head__head(modifier)
+    +block-head__description(modifier)

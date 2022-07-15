@@ -1,1 +1,8 @@
 .main-screen {}
+@import '__block-head/main-screen__block-head';
+@import '__advantages/main-screen__advantages';
+@import 'advantage-text/main-screenadvantage-text';
+@import '__advantage-description/main-screen__advantage-description';
+@import '__active-elements/main-screen__active-elements';
+@import '__label/main-screen__label';
+@import '__button/main-screen__button';
