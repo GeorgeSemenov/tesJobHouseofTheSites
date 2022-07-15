@@ -5,4 +5,5 @@ mixin block-head(modifier)
     - modifier = {};
   .block-head&attributes(attributes)
     +block-head__head(modifier)
-    +block-head__description(modifier)
+    if modifier["description"] != undefined
+      +block-head__description(modifier)

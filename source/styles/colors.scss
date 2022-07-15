@@ -6,7 +6,10 @@ $white: #fff;//Не удалять, используется в global.css
 $black: #262626;//Не удалять, используется в global.css
 
 $blue: #67A8D2;//голубенький, как на аватаре.
+$blue-dark: #3E708F;
+$blue-darker: #1B567C;
 $orange: #FA6232;
+$orange72: #FE8572;
 
 /* variables with sense */
 
@@ -33,3 +36,12 @@ $contacts--Color: $white;
 $button--BGColor: $blue;
 $button-hover--BGColor: darken($button--BGColor, 15%);
 $button-active--BGColor: darken($button--BGColor, 30%);
+
+$block-head_theme_main__head--Color: $white;
+$block-head_theme_main__head-shadow--Color: $blue-dark;
+
+$main-screen--BGColor: linear-gradient(91.05deg, #5994BA 14.15%, #ADCCE0 99%);
+$main-screen--Color: $white;//отвечает за все цвета в этом блоке
+$main-screen__advantages--Color: $main-screen--Color;
+$main-screen__label--BGColor:$blue-darker;
+$main-screen__label--BShadow: $orange72;

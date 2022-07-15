@@ -1,0 +1,4 @@
+mixin main-screen__advantage-text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "advantage-empty__text";
+  .main-screen__advantage-text&attributes(attributes)!=modifier.text

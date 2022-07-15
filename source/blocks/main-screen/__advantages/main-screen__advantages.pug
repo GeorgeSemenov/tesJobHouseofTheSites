@@ -1,2 +1,8 @@
 mixin main-screen__advantages(modifier)
-  .main-screen__advantages&attributes(attributes)
+  if modifier["advantages"] == undefined
+    - modifier["advantages"] = [{}];
+  ul.main-screen__advantages&attributes(attributes)
+    each advantage in modifier.advantages
+      if advantage["modifier"] == undefined
+        - advantage["modifier"] = "";
+      +main-screen__advantage(advantage)(class=advantage.modifier)

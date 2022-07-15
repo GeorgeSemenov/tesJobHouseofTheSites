@@ -41,4 +41,22 @@ html(lang="ru")
       ]
     })
     main
-      
+      +main-screen({
+        blockHead:{
+          headTag : "h1",
+          text: "Платный хостинг для сайта",
+        },
+        advantages: [
+          {
+            text:"Совместим с любыми CMS:", 
+            description:"1С-Битрикс, Wordpress, Opencart, DLE, Joomla и др.",
+          },
+          {
+            text: "Всё включено:",
+            description: "PHP 5.4 – 8.0, Perl, FTP, MySQL, ISPManager",
+          }
+        ],
+        labelText: "Всего от ",
+        labelHighlightedText: "99 ₽ в месяц!",
+        buttonText: "Заказать хостинг",
+      })

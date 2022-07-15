@@ -1,1 +1,9 @@
-.main-screen__active-elements {}
+.main-screen__active-elements {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  position: relative;
+  @media (max-width: $md - 1px){
+      width: 100%;
+  }
+}

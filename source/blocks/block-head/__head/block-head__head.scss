@@ -1,1 +1,11 @@
-.block-head__head {}
+.block-head__head {
+}
+
+.block-head_theme_main {
+  font-weight: 500;
+  font-size: 7.2rem;
+  line-height: 100%;
+  letter-spacing: 0.06em;
+  color: $block-head_theme_main__head--Color;
+  text-shadow: 3px 1px 0px $block-head_theme_main__head-shadow--Color;
+}

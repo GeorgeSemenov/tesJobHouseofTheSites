@@ -1,8 +1,30 @@
-.main-screen {}
+.main-screen {
+  font-family: 'SF Pro Display' ,Arial , Sans-serif;
+  background: $main-screen--BGColor;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: $main-screen--Color;
+}
+/*
+blockHead: {  headTag,   text:"str"},
+advantages: [{text:"str", description:"str"}],
+labelText,
+labelHighlightedText,
+buttonText,
+
+$main-screen-Color; - отвечает за все цвета в этом блоке
+$main-screen__advantages--Color
+$main-screen__label--BGColor
+$main-screen__label--BShadow// Устанавливает цвет для прямоугольника под лэйблом
+*/
 @import '__block-head/main-screen__block-head';
 @import '__advantages/main-screen__advantages';
-@import 'advantage-text/main-screenadvantage-text';
 @import '__advantage-description/main-screen__advantage-description';
 @import '__active-elements/main-screen__active-elements';
 @import '__label/main-screen__label';
 @import '__button/main-screen__button';
+@import '__advantage/main-screen__advantage';
+
+@import '__advantage-text/main-screen__advantage-text';

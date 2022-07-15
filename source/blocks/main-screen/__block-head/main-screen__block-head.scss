@@ -1,1 +1,6 @@
-.main-screen__block-head {}
+.main-screen__block-head {
+  max-width: 60%;
+  @media (max-width: $md - 1px){
+    max-width: 90%;
+  }
+}

@@ -1,1 +1,19 @@
-.main-screen__label {}
+.main-screen__label {
+  position: absolute;
+  left: -1000px;
+  right: 300px;
+  padding-top: 5px;
+  padding-bottom: 7px;
+  padding-right: 32px;
+  text-align: right;
+  background-color: $main-screen__label--BGColor;
+
+  font-size: 2.4rem;
+  line-height: 150%;
+
+  box-shadow: 10px 10px $main-screen__label--BShadow;
+
+  span{
+    font-weight: 700;
+  }
+}

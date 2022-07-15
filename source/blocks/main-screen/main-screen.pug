@@ -1,7 +1,16 @@
+include __advantage-text/main-screen__advantage-text.pug
+include __advantage/main-screen__advantage.pug
 include __label/main-screen__label.pug
 include __active-elements/main-screen__active-elements.pug
 include __advantage-description/main-screen__advantage-description.pug
-include advantage-text/main-screenadvantage-text.pug
 include __advantages/main-screen__advantages.pug
+include ../block-head/block-head.pug
+include ../button/button.pug
 mixin main-screen(modifier)
+  if modifier == undefined
+    - modifier = {};
   .main-screen&attributes(attributes)
+    .content-container
+      +block-head(modifier.blockHead)(class="main-screen__block-head block-head_theme_main")
+      +main-screen__advantages(modifier)
+      +main-screen__active-elements(modifier)    

@@ -1,12 +1,14 @@
 html{
   background-color: $white;
   color: $black;
+  font-family: 'SF Pro Display' ,Arial , Sans-serif;
   font-size: 10px;
-  font-family: 'quicksand', tahoma,  sans-serif;
+  @media (max-width: $md - 1px){
+    font-size: 7px;
+  }
 }
 body{
   margin:0;
-  font-family: 'SF Pro Display' ,Arial , Sans-serif;
 }
 main{
 }
