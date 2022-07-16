@@ -1,4 +1,6 @@
 .header__bottom-content {
   background-color: $header__bottom-content--BGColor;
   @include mx(auto);
+  padding-bottom: 13px;
+  
 }

@@ -16,10 +16,15 @@
     padding: 7px 10px;
     margin-right: 10px ;
   }
+
+  &_theme_orange{
+    background-color: $button_theme_orangeo--BGColor;
+  }
 }
 
 /*
   buttonText
 
   $button--BGColor
+  $button_theme_orangeo--BGColor
 */

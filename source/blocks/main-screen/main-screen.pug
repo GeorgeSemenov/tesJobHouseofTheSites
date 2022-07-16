@@ -9,7 +9,7 @@ include ../button/button.pug
 mixin main-screen(modifier)
   if modifier == undefined
     - modifier = {};
-  .main-screen&attributes(attributes)
+  section.main-screen&attributes(attributes)
     .content-container
       +block-head(modifier.blockHead)(class="main-screen__block-head block-head_theme_main")
       +main-screen__advantages(modifier)
