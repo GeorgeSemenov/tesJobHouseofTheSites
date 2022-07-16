@@ -3,5 +3,9 @@
   font-size: 20px;
   line-height: 150%;
   color: $main-screen__advantages--Color;
+  margin-bottom: 23px;
 
+  @media (max-width: $md - 1px){
+      margin-bottom: 15px ; 
+  }
 }

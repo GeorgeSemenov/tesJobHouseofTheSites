@@ -1,0 +1,35 @@
+.hosting-prices {
+    padding-top: 95px;
+
+  @media (max-width: $md - 1px){
+    padding-top: 15px;
+  }
+}
+/*
+blockHead: {headTag, text, description},
+columns: [{
+            modifier,
+            columnHeadPicModifier,
+            columnHeadPic,
+            columnHeadText,
+            advantages: [{modifier, text}]
+            price: {price, period},
+            oldPrice: {price, period},
+            buttonText:"",
+          }],
+gridLabel,
+link:{href,text},
+*/
+@import '__block-head/hosting-prices__block-head';
+@import '__grid/hosting-prices__grid';
+@import '__column-head/hosting-prices__column-head';
+@import '__column-pic/hosting-prices__column-pic';
+@import '__column-head-text/hosting-prices__column-head-text';
+@import '__grid-label/hosting-prices__grid-label';
+@import '__column-body/hosting-prices__column-body';
+@import '__advantages/hosting-prices__advantages';
+@import '__advantage/hosting-prices__advantage';
+@import '__price-container/hosting-prices__price-container';
+@import '__price/hosting-prices__price';
+@import '__button/hosting-prices__button';
+@import '__link/hosting-prices__link';

@@ -1,9 +1,16 @@
 .main-screen__active-elements {
   display: flex;
   justify-content: flex-end;
-  width: 51.5%;
+  width: 49.2%;
   position: relative;
+  @media (max-width: $xl - 1px){
+      width: 72%;
+  }
+  @media (max-width: $lg - 1px){
+    width: 86%;
+  }
   @media (max-width: $md - 1px){
-      width: 100%;
+    width: 100%;
+    flex-direction: column;
   }
 }

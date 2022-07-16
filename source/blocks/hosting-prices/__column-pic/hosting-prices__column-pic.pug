@@ -1,0 +1,15 @@
+mixin hosting-prices__column-pic(modifier)
+  if modifier["columnHeadPicModifier"] == undefined
+    - modifier["columnHeadPicModifier"] = "";
+  .hosting-prices__column-pic&attributes(attributes)
+    case modifier.columnHeadPic
+      when "telegram"
+        +telegram(modifier)(class=modifier.columnHeadPicModifier)
+      when "baloon"
+        +baloon(modifier)(class=modifier.columnHeadPicModifier)
+      when "helicopter"
+        +baloon(modifier)(class=modifier.columnHeadPicModifier)
+      when "rocket"
+        +baloon(modifier)(class=modifier.columnHeadPicModifier)
+      default
+        p pic unset or undefined

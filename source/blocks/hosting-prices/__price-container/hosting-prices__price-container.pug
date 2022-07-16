@@ -1,0 +1,5 @@
+mixin hosting-prices__price-container(modifier)
+  .hosting-prices__price-container&attributes(attributes)
+    +hosting-prices__price(modifier.price)
+    if modifier.oldPrice !=undefined
+      +hosting-prices__price(modifier.oldPrice)(class="hosting-prices__price_theme_old")

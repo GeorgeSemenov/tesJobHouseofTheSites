@@ -10,6 +10,7 @@ $blue-dark: #3E708F;
 $blue-darker: #1B567C;
 $orange: #FA6232;
 $orange72: #FE8572;
+$gray: #3C3B3B;
 
 /* variables with sense */
 
@@ -38,6 +39,7 @@ $button-hover--BGColor: darken($button--BGColor, 15%);
 $button-active--BGColor: darken($button--BGColor, 30%);
 $button_theme_orangeo--BGColor: $orange;
 
+$block-head--Color: $gray;
 $block-head_theme_main__head--Color: $white;
 $block-head_theme_main__head-shadow--Color: $blue-dark;
 

@@ -1,6 +1,7 @@
 include ../../blocks/favicon/favicon.pug
 include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/header/header.pug
+include ../../blocks/hosting-prices/hosting-prices.pug
 doctype html
 html(lang="ru")
   head
@@ -59,4 +60,95 @@ html(lang="ru")
         labelText: "Всего от ",
         labelHighlightedText: "99 ₽ в месяц!",
         buttonText: "Заказать хостинг",
+      })
+      +hosting-prices({
+      blockHead: {
+        text: "Тарифы на хостинг", 
+        description: [
+          ["У нас оптимальные тарифы на классический виртуальный хостинг с безлимитными ресурсами на количество сайтов, баз данных и FTP."],
+          ["Выбирайте наш лучший ","безлимитный", " хостинг в России!"]
+        ],
+      },
+      columns: [
+                  {
+                    columnHeadPicModifier: "",
+                    columnHeadPic:"baloon",
+                    columnHeadText: "мини",
+                    advantages: [
+                      {
+                        modifier:"hosting-prices__advantage_theme_main", 
+                        text: "2Gb места SSD ",
+                      },
+                      {text: "PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4"},
+                      {text: "Поддержка любой CMS"},
+                      {text: "Бесплатные SSL сертификаты Let's Encrypt"},
+                      {text: "Защита от DDoS"},
+                    ],
+                    price: {price: "99 ₽", period: "в месяц"},
+                    oldPrice: {price: "117 ₽", period:"в месяц"},
+                    buttonText: "Купить хостинг",
+                  },
+                  {
+                    columnHeadPicModifier: "",
+                    columnHeadPic:"telegram",
+                    columnHeadText: "старт",
+                    advantages: [
+                      {
+                        modifier:"hosting-prices__advantage_theme_main", 
+                        text: "7Gb места SSD ",
+                      },
+                      {text: "PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4"},
+                      {text: "Поддержка любой CMS"},
+                      {text: "Бесплатные SSL сертификаты Let's Encrypt"},
+                      {text: "Защита от DDoS"},
+                      {text: "Повышенная производительность"},
+                      {text: "Домен в подарок"},
+                    ],
+                    price: {price: "149 ₽", period: "в месяц"},
+                    oldPrice: {price: "117 ₽", period:"в месяц"},
+                    buttonText: "Купить хостинг",
+                  },
+                  {
+                    columnHeadPicModifier: "",
+                    columnHeadPic:"helicopter",
+                    columnHeadText: "стандарт",
+                    advantages: [
+                      {
+                        modifier:"hosting-prices__advantage_theme_main", 
+                        text: "30Gb места SSD ",
+                      },
+                      {text: "PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4"},
+                      {text: "Поддержка любой CMS"},
+                      {text: "Бесплатные SSL сертификаты Let's Encrypt"},
+                      {text: "Защита от DDoS"},
+                      {text: "Повышенная производительность"},
+                      {text: "Домен в подарок"},
+                    ],
+                    price: {price: "290 ₽", period: "в месяц"},
+                    oldPrice: {price: "117 ₽", period:"в месяц"},
+                    buttonText: "Купить хостинг",
+                  },
+                  {
+                    columnHeadPicModifier: "",
+                    columnHeadPic:"rocket",
+                    columnHeadText: "бизнес",
+                    advantages: [
+                      {
+                        modifier:"hosting-prices__advantage_theme_main", 
+                        text: "50Gb места SSD ",
+                      },
+                      {text: "PHP - 5.6, 7.0, 7.1, 7.2, 7.3, 7.4"},
+                      {text: "Поддержка любой CMS"},
+                      {text: "Бесплатные SSL сертификаты Let's Encrypt"},
+                      {text: "Защита от DDoS"},
+                      {text: "Повышенная производительность"},
+                      {text: "Домен в подарок"},
+                    ],
+                    price: {price: "470 ₽", period: "в месяц"},
+                    oldPrice: {price: "117 ₽", period:"в месяц"},
+                    buttonText: "Купить хостинг",
+                  },
+                ],
+      gridLabel:"Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков",
+      link:{href:"#!",text: "Посмотреть все характеристики нашего хостинга"},
       })

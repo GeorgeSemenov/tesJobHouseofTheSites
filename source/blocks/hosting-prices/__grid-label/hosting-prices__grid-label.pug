@@ -1,0 +1,4 @@
+mixin hosting-prices__grid-label(modifier)
+  if modifier["gridLabel"] == undefined
+    - modifier["gridLabel"] = "empty__gridLabel";
+  p.hosting-prices__grid-label&attributes(attributes)!=modifier.gridLabel

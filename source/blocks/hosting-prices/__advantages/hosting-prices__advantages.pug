@@ -1,0 +1,8 @@
+mixin hosting-prices__advantages(modifier)
+  ul.hosting-prices__advantages&attributes(attributes)
+    if modifier["advantages"] == undefined
+      - modifier["advantages"] = [{}];
+    each advantage in modifier.advantages
+      if advantage["modifier"] == undefined
+        - advantage["modifier"] = "";
+      +hosting-prices__advantage(advantage)(class=advantage.modifier)

@@ -1,11 +1,28 @@
 .block-head__head {
+  padding: 0;
+  font-weight: 400;
+  font-size: 4.8rem;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin-bottom: 55px ;
+  @media (max-width: $md - 1px){
+      margin-bottom: 15px ; 
+  }
 }
 
-.block-head_theme_main {
+.block-head_theme_main .block-head__head{
   font-weight: 500;
   font-size: 7.2rem;
   line-height: 100%;
   letter-spacing: 0.06em;
   color: $block-head_theme_main__head--Color;
   text-shadow: 3px 1px 0px $block-head_theme_main__head-shadow--Color;
+  text-align: left;
+
+  margin-bottom: 33px;
+  @media (max-width: $md - 1px){
+      margin-bottom: 15px ;
+    font-size: 6rem;
+  }
 }

@@ -1,2 +1,6 @@
 .header__button {
+    margin-right: 29px;
+    @media (max-width: $md - 1px){
+        margin-right: 10px ;
+    }
 }

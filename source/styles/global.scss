@@ -4,7 +4,7 @@ html{
   font-family: 'SF Pro Display' ,Arial , Sans-serif;
   font-size: 10px;
   @media (max-width: $md - 1px){
-    font-size: 7px;
+    font-size: 6px;
   }
 }
 body{
@@ -14,7 +14,7 @@ main{
 }
 
 .content-container{
-  max-width: 1180px;
+  max-width: 1207px;
   @include mx(auto);
   @include px(15px);
   box-sizing: border-box;

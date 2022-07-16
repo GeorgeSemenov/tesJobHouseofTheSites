@@ -26,10 +26,8 @@
   flex-wrap: wrap;
   position: relative;
   @media (max-width: $md - 1px){
-    padding-top: 6px;
     overflow: hidden;
     @include transition();
-    margin-bottom: 9px;
   }
   @media print{
     display: none;

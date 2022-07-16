@@ -1,6 +1,9 @@
 .header__bottom-content {
   background-color: $header__bottom-content--BGColor;
   @include mx(auto);
-  padding-bottom: 13px;
-  
+  padding-bottom: 13px ;
+
+  @media (max-width: $md - 1px){
+      padding-bottom: 0 ;
+  }
 }

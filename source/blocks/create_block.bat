@@ -15,7 +15,9 @@ rem
 rem Создаём новый файл.scss и тут же наполняем его нужным содержимым
 cd %fileName%
 (
-echo .%fileName% {}
+echo .%fileName% {
+echo %TAB% padding: 0;
+echo }
 )>%styleSCSS%
 rem создаём pug
 (

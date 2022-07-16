@@ -1,4 +1,10 @@
 mixin block-head__description(modifier)
   if modifier["description"] == undefined
-    - modifier["description"] = "block-head-empty__description";
-  p.block-head__description&attributes(attributes)!=modifier.description
+    - modifier["description"] = [["empty description"]];
+  each paragraph in modifier.description
+    p.block-head__description&attributes(attributes)
+      each text, index in paragraph
+        if (index%2 == 0)
+          |!{text}
+        else
+          span!=text

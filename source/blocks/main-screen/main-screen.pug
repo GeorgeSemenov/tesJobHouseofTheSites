@@ -1,3 +1,4 @@
+include __content/main-screen__content.pug
 include __advantage-text/main-screen__advantage-text.pug
 include __advantage/main-screen__advantage.pug
 include __label/main-screen__label.pug
@@ -10,7 +11,4 @@ mixin main-screen(modifier)
   if modifier == undefined
     - modifier = {};
   section.main-screen&attributes(attributes)
-    .content-container
-      +block-head(modifier.blockHead)(class="main-screen__block-head block-head_theme_main")
-      +main-screen__advantages(modifier)
-      +main-screen__active-elements(modifier)    
+    +main-screen__content(modifier)(class="content-container")

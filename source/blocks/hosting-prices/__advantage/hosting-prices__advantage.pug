@@ -1,0 +1,4 @@
+mixin hosting-prices__advantage(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__advantage-text";
+  li.hosting-prices__advantage&attributes(attributes)!=modifier.text

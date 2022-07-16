@@ -1,0 +1,4 @@
+mixin hosting-prices__column-head-text(modifier)
+  if modifier["columnHeadText"] == undefined
+    - modifier["columnHeadText"] = "empty__columnHeadText";
+  p.hosting-prices__column-head-text&attributes(attributes)!=modifier.columnHeadText

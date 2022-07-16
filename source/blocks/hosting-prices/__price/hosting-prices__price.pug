@@ -1,0 +1,9 @@
+mixin hosting-prices__price(modifier)
+  if modifier == undefined
+    - modifier = {};
+  if modifier["price"] == undefined
+    - modifier["price"] = "empty__price";
+  if modifier["period"] == undefined
+    - modifier["period"] = "";
+  p.hosting-prices__price&attributes(attributes)!=modifier.price
+    span!=modifier.period

@@ -1,0 +1,18 @@
+.main-screen__content {
+  background-image: url('../../img/main-screenBG.png');
+  background-repeat: no-repeat;
+  background-position: 108%;
+  padding-top: 55px;
+  padding-bottom: 64px;
+  
+  @media (max-width: $lg - 1px){
+    padding-top: 15px ;
+    padding-bottom: 55px;
+    background-position: 100%;
+    text-align: center;
+    background-image: none;
+  }
+  @media (max-width: $md - 1px){
+      padding-bottom: 15px ;
+  }
+}

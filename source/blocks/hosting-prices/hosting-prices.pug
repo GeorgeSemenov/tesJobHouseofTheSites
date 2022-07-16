@@ -1,0 +1,24 @@
+include __link/hosting-prices__link.pug
+include __price/hosting-prices__price.pug
+include __price-container/hosting-prices__price-container.pug
+include __advantage/hosting-prices__advantage.pug
+include __advantages/hosting-prices__advantages.pug
+include __column-body/hosting-prices__column-body.pug
+include __grid-label/hosting-prices__grid-label.pug
+include __column-head-text/hosting-prices__column-head-text.pug
+include __column-pic/hosting-prices__column-pic.pug
+include __column-head/hosting-prices__column-head.pug
+include __grid/hosting-prices__grid.pug
+include ../block-head/block-head.pug
+include ../../img/SVG/telegram.pug
+include ../../img/SVG/baloon.pug
+include ../../img/SVG/helicopter.pug
+include ../../img/SVG/rocket.pug
+mixin hosting-prices(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.hosting-prices&attributes(attributes)
+    .content-container
+      +block-head(modifier.blockHead)(class="hosting-prices__block-head")
+      +hosting-prices__grid(modifier)
+      +hosting-prices__link(link)
