@@ -1,10 +1,13 @@
 .hosting-prices {
-    padding-top: 95px;
+  padding-top: 95px;
+  background-color: $hosting-prices--BGColor;
+  color: $hosting-prices--Color;
 
   @media (max-width: $md - 1px){
     padding-top: 15px;
   }
 }
+$column-width : 280px;
 /*
 blockHead: {headTag, text, description},
 columns: [{
@@ -19,6 +22,13 @@ columns: [{
           }],
 gridLabel,
 link:{href,text},
+
+$column-width// прописывается в hosting-prices перед остальными стилями, указывает на ширину колонки (для column-head и для column-body)
+
+$hosting-prices--BGColor;
+$hosting-prices__column-head--BGColor;
+$hosting-prices__column-head-text--Color;
+$hosting-prices--Color;
 */
 @import '__block-head/hosting-prices__block-head';
 @import '__grid/hosting-prices__grid';

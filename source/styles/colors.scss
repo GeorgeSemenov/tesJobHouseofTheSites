@@ -10,6 +10,7 @@ $blue-dark: #3E708F;
 $blue-darker: #1B567C;
 $orange: #FA6232;
 $orange72: #FE8572;
+$gray-light: #E5E5E5;
 $gray: #3C3B3B;
 
 /* variables with sense */
@@ -48,3 +49,8 @@ $main-screen--Color: $white;//отвечает за все цвета в это�
 $main-screen__advantages--Color: $main-screen--Color;
 $main-screen__label--BGColor:$blue-darker;
 $main-screen__label--BShadow: $orange72;
+
+$hosting-prices--BGColor: $gray-light;
+$hosting-prices--Color: $gray;
+$hosting-prices__column-head--BGColor: $white;
+$hosting-prices__column-head-text--Color: $blue-darker;

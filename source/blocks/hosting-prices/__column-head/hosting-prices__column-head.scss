@@ -1,1 +1,9 @@
-.hosting-prices__column-head {}
+.hosting-prices__column-head {
+  background-color: $hosting-prices__column-head--BGColor;
+  width: $column-width;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
