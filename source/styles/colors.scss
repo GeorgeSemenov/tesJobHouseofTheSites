@@ -6,12 +6,15 @@ $white: #fff;//Не удалять, используется в global.css
 $black: #262626;//Не удалять, используется в global.css
 
 $blue: #67A8D2;//голубенький, как на аватаре.
+$blue-lightest: #dbe8f0;
+$blue-lighter: #c4dbea;
 $blue-dark: #3E708F;
 $blue-darker: #1B567C;
 $orange: #FA6232;
 $orange72: #FE8572;
 $gray-light: #E5E5E5;
 $gray: #3C3B3B;
+
 
 /* variables with sense */
 
@@ -54,3 +57,6 @@ $hosting-prices--BGColor: $gray-light;
 $hosting-prices--Color: $gray;
 $hosting-prices__column-head--BGColor: $white;
 $hosting-prices__column-head-text--Color: $blue-darker;
+
+$CMS-support--BGColor-top-left: $blue-lightest;
+$CMS-support--BGColor-bottom-right: $blue-lighter;

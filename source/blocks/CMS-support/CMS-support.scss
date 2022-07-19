@@ -1,7 +1,10 @@
 .CMS-support {
   padding-top: 46px;
+  padding-bottom: 33px;
+  background-image: linear-gradient(155deg, $CMS-support--BGColor-top-left 50%, $CMS-support--BGColor-bottom-right 50%);
   @media (max-width: $md - 1px) { 
     padding-top: 15px;  
+    padding-bottom: 15px;
   }
 }
 /*

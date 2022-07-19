@@ -1,0 +1,6 @@
+mixin hosting-prices__heads(modifier)
+  .hosting-prices__heads&attributes(attributes)
+    each column in modifier.columns
+      if column["modifier"] == undefined
+        - column["modifier"] = "";
+      +hosting-prices__column-head(column)(class=column.modifier)

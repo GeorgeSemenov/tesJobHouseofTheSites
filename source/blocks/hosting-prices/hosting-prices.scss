@@ -8,6 +8,7 @@
   }
 }
 $column-width : 280px;
+$columns-gap: 20px;
 /*
 blockHead: {headTag, text, description},
 columns: [{
@@ -23,7 +24,8 @@ columns: [{
 gridLabel,
 link:{href,text},
 
-$column-width// прописывается в hosting-prices перед остальными стилями, указывает на ширину колонки (для column-head и для column-body)
+$column-width// указывает на ширину колонки (для column-head и для column-body), прописывается в hosting-prices перед остальными стилями,
+$columns-gap// указывает на ширину между колонками , прописывается в hosting-prices перед остальными стилями,
 
 $hosting-prices--BGColor;
 $hosting-prices__column-head--BGColor;
@@ -43,3 +45,5 @@ $hosting-prices--Color;
 @import '__price/hosting-prices__price';
 @import '__button/hosting-prices__button';
 @import '__link/hosting-prices__link';
+@import '__heads/hosting-prices__heads';
+@import '__bodies/hosting-prices__bodies';

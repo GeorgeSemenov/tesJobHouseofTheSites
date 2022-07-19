@@ -2,12 +2,6 @@ mixin hosting-prices__grid(modifier)
   if modifier["columns"] == undefined
     - modifier["columns"] = [{}];
   .hosting-prices__grid&attributes(attributes)
-    each column in modifier.columns
-      if column["modifier"] == undefined
-        - column["modifier"] = "";
-      +hosting-prices__column-head(column)(class=column.modifier)
+    +hosting-prices__heads(modifier)
     +hosting-prices__grid-label(modifier)
-    each column in modifier.columns
-      if column["modifier"] == undefined
-        - column["modifier"] = "";
-      +hosting-prices__column-body(column)(class=column.modifier)
+    +hosting-prices__bodies(modifier)

@@ -2,8 +2,9 @@
   font-size: 2rem;
   line-height: 150%;
   width: 61%;
-  @media (max-width: $md - 1px){
-      width: 100%;
+  @media (max-width: $lg - 1px){
+    width: 100%;
+    text-align: center;
   }
   span{
     font-weight: 600;
