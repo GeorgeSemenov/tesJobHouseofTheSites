@@ -1,0 +1,8 @@
+mixin CMS-support__logos-grid(modifier)
+  if modifier["logos"] == undefined
+    - modifier["logos"] = [{}];
+  ul.CMS-support__logos-grid&attributes(attributes)
+    each logo in modifier.logos
+      if logo["modifier"] == undefined
+        - logo["modifier"] = "";
+      +CMS-support__logo(logo)(class=logo.modifier)

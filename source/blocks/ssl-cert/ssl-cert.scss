@@ -1,0 +1,26 @@
+.ssl-cert {
+  padding: 0;
+}
+/*
+blockHead: {headTag: "",
+  text: "",
+  description: [//Массив параграфов описания
+  []//Массив чередующихся текстов, обычный и выделенный чередуются
+  ],
+},
+sslTypes: [{modifier: "", sslType:{
+    title:"",
+    advantages: [{modifier:"", advantage: ""}],
+    price:{price:"", period: ""}
+  },
+}],
+buttonText: "",
+*/
+@import '__block-head/ssl-cert__block-head';
+@import '__ssl-types/ssl-cert__ssl-types';
+@import '__ssl-type/ssl-cert__ssl-type';
+@import '__ssl-title/ssl-cert__ssl-title';
+@import '__ssl-advantages/ssl-cert__ssl-advantages';
+@import '__ssl-advantage/ssl-cert__ssl-advantage';
+@import '__ssl-price/ssl-cert__ssl-price';
+@import '__button/ssl-cert__button';

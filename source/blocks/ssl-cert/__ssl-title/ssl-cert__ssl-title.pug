@@ -1,0 +1,4 @@
+mixin ssl-cert__ssl-title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__ssl-cert-title";
+  h3.ssl-cert__ssl-title&attributes(attributes)!=modifier.title

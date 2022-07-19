@@ -1,0 +1,6 @@
+.CMS-support__block-head {
+  margin-bottom: 75px;
+  @media (max-width: $md - 1px) { 
+    margin-bottom: 15px;  
+  }
+}

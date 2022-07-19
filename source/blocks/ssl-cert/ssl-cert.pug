@@ -1,0 +1,15 @@
+include __ssl-price/ssl-cert__ssl-price.pug
+include __ssl-advantage/ssl-cert__ssl-advantage.pug
+include __ssl-advantages/ssl-cert__ssl-advantages.pug
+include __ssl-title/ssl-cert__ssl-title.pug
+include __ssl-type/ssl-cert__ssl-type.pug
+include __ssl-types/ssl-cert__ssl-types.pug
+include ../block-head/block-head.pug
+include ../button/button.pug
+mixin ssl-cert(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.ssl-cert&attributes(attributes)
+    +block-head(modifier.blockHead)(class="ssl-cert__block-head")
+    +ssl-cert__ssl-types(modifier)
+    +button(modifier)(class="ssl-cert__button")

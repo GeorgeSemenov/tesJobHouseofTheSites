@@ -1,0 +1,11 @@
+include __logo/CMS-support__logo.pug
+include __logos-grid/CMS-support__logos-grid.pug
+include ../block-head/block-head.pug
+
+mixin CMS-support(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.CMS-support&attributes(attributes)
+    .content-container
+      +block-head(modifier.blockHead)(class="CMS-support__block-head")
+      +CMS-support__logos-grid(modifier)

@@ -1,0 +1,8 @@
+mixin ssl-cert__ssl-types(modifier)
+  if modifier["sslTypes"] == undefined
+    - modifier["sslTypes"] = [{}];
+  ul.ssl-cert__ssl-types&attributes(attributes)
+    each sslType in modifier.sslTypes
+      if sslType["modifier"] == undefined
+        - sslType["modifier"] = "";
+      ssl-cert__ssl-type(sslType)(class=sslType.modifier)

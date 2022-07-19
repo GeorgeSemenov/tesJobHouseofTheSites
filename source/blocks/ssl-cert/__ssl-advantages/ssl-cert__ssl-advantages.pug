@@ -1,0 +1,8 @@
+mixin ssl-cert__ssl-advantages(modifier)
+  if modifier["advantages"] == undefined
+    - modifier["advantages"] = [{}];
+  ul.ssl-cert__ssl-advantages&attributes(attributes)
+    each advantage in modifier.advantages
+      if advantage["modifier"] == undefined
+        - advantage["modifier"] = "";
+      +ssl-cert__ssl-advantage(advantage)(class=advantage.modifier)

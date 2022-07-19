@@ -1,0 +1,20 @@
+.CMS-support {
+  padding-top: 46px;
+  @media (max-width: $md - 1px) { 
+    padding-top: 15px;  
+  }
+}
+/*
+blockHead: {
+  headTag: "",
+  text: "",
+  description: [//Массив параграфов описания
+  []//Массив чередующихся текстов, обычный и выделенный чередуются
+  ],
+},
+logos:[{modifier:"", logo:""}]
+*/
+@import '__block-head/CMS-support__block-head';
+@import '__logos-grid/CMS-support__logos-grid';
+@import '__logo/CMS-support__logo';
+

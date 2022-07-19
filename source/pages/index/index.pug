@@ -2,6 +2,9 @@ include ../../blocks/favicon/favicon.pug
 include ../../blocks/main-screen/main-screen.pug
 include ../../blocks/header/header.pug
 include ../../blocks/hosting-prices/hosting-prices.pug
+include ../../blocks/CMS-support/CMS-support.pug
+include ../../blocks/ssl-cert/ssl-cert.pug
+
 doctype html
 html(lang="ru")
   head
@@ -151,4 +154,102 @@ html(lang="ru")
                 ],
       gridLabel:"Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков",
       link:{href:"#!",text: "Посмотреть все характеристики нашего хостинга"},
+      })
+      +CMS-support({
+        blockHead: {
+          text: "Хостинг с поддержкой любой CMS",
+          description: [
+            ["На нашем виртуальном хостинге вы сможете разместить сайт на ", "любой CMS", ",<br/>а также установить в два клика любую популярную систему управлению сайтом"]
+          ],
+        },
+        logos:[
+          {logo:"1c"},
+          {logo:"WordPress"},
+          {logo:"Joomla"},
+          {logo:"MODX"},
+          {logo:"opencart"},
+          {logo:"umiCMS"},
+          {logo:"drupal"},
+          {logo:"instantCMS"},
+          {logo:"netcat"},
+          {logo:"phpBB"},
+          {logo:"shopscript"},
+          {logo:"DLE"},
+          {logo:"hostcms"},
+          {logo:"prestashop"},
+        ]
+      })
+      +ssl-cert({
+        blockHead: {
+          text: "SSL-сертификаты",
+          description: [
+            ["Купить SSL и попасть в TOP Google. WSHOST предлагает низкие цены и быстрый выпуск за счет ", "уникальных", " партнерских условий с удостоверяющими центрами."],
+            ["Подберите сертификат исходя из задач и предпочтений, удобные фильтры и описание помогут определиться"]
+          ],
+        },
+        sslTypes: [
+          {
+            modifier: "", 
+            sslType:{
+              title:"SSL для сайта Comodo PositiveSSL",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита 1го домена"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Низкая степень доверия"},
+                {advantage: "Совместимость с браузерами: 96%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"900 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"SSL для магазина Positive SSL MDC    (3 domains)",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита 3х доменов"},
+                {advantage: "Опция добавления доменов"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Достаточная степень доверия"},
+                {advantage: "Совместимость с браузерами: 99.8%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"3800 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"С защитой поддоменов Essential SSL Wildcard",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита всех поддоменов"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Достаточная степень доверия"},
+                {advantage: "Совместимость с браузерами: 99.8%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"6700 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"С зеленой строкой True BusinessID with EV",
+              advantages: [
+                {advantage: "Только для юридических лиц"},
+                {advantage: "Защита одного домена"},
+                {advantage: "Зеленая адресная строка"},
+                {advantage: "Наивысшая степень доверия"},
+                {advantage: "Без поддержки IDN"},
+                {advantage: "Совместимость с браузерами: 99.9%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"12600 ₽", period: "/ год"}
+            },
+          },
+        ],
+        buttonText: "Заказать SSL сертификат",
       })

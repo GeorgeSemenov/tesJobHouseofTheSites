@@ -12,7 +12,9 @@ PUG=${fileName}.pug
 # Создаём новый файл.scss и тут же наполняем его нужным содержимым
 cd ${fileName}
 cat > ${styleSCSS} << end 
-.${fileName} {}
+.${fileName} {
+${TAB}padding: 0;  
+}
 end
 # создаём pug
 cat > ${PUG} << end 
