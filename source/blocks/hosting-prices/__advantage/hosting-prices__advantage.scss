@@ -1,3 +1,15 @@
 .hosting-prices__advantage {
-  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: $hosting-prices__advantage--Color;
+  margin-bottom: 14px; 
+
+  &_theme_main{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: $hosting-prices__advantage_theme_main--Color;
+    margin-bottom: 12px ;
+  }
 }

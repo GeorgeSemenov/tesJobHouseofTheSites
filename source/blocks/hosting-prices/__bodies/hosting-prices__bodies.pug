@@ -1,5 +1,5 @@
 mixin hosting-prices__bodies(modifier)
-  .hosting-prices__bodies&attributes(attributes)
+  ul.hosting-prices__bodies&attributes(attributes)
     each column in modifier.columns
       if column["modifier"] == undefined
         - column["modifier"] = "";

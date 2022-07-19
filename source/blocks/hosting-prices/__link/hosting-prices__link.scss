@@ -1,3 +1,21 @@
 .hosting-prices__link {
-  padding: 0;
+  font-weight: 400;
+  font-size: 16px;
+  font-style: italic;
+  line-height: 150%;
+  color: $hosting-prices__link--Color;
+  text-align: center;
+  display: inline-block;
+  @include mx(auto);
+  position: relative;
+
+  &::after{
+    width: 100%;
+    content: '';
+    background-color: red;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }

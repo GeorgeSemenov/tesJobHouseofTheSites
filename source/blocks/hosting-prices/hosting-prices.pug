@@ -1,3 +1,4 @@
+include __link-container/hosting-prices__link-container.pug
 include __bodies/hosting-prices__bodies.pug
 include __heads/hosting-prices__heads.pug
 include __link/hosting-prices__link.pug
@@ -23,4 +24,4 @@ mixin hosting-prices(modifier)
     .content-container
       +block-head(modifier.blockHead)(class="hosting-prices__block-head")
       +hosting-prices__grid(modifier)
-      +hosting-prices__link(link)
+      +hosting-prices__link-container(modifier.link)

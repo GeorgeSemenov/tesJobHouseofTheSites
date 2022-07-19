@@ -1,1 +1,11 @@
-.hosting-prices__price-container {padding: 0}
+.hosting-prices__price-container {
+    margin-top: auto  ;
+    font-size: 36px;
+    line-height: 150%;
+    color: $hosting-prices__price-container;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 28px;
+}

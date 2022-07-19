@@ -1,1 +1,16 @@
-.hosting-prices__price {padding: 0;}
+.hosting-prices__price {
+  flex-basis: 50%;
+  background: linear-gradient(90deg, #7CB4D8 0%, rgba(191, 230, 255, 0) 100%);
+  &_theme_old{
+    color: $hosting-prices__price_theme_old;   
+    text-decoration: line-through;
+    background-image: none;
+  }
+  span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+        display: block;
+    margin-top: -13px;
+  }
+}

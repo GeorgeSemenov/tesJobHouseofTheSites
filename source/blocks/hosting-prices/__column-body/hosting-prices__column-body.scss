@@ -1,3 +1,13 @@
 .hosting-prices__column-body {
-  padding: 0;
+  background-color: $hosting-prices__column-body--BGColor;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+  border-radius: 0px 0px 10px 10px;
+  text-align: center;
+  padding-top: 17px;
+    padding-bottom: 25px;
+    min-height: 444px;
 }

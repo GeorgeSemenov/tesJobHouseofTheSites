@@ -14,6 +14,7 @@ $orange: #FA6232;
 $orange72: #FE8572;
 $gray-light: #E5E5E5;
 $gray: #3C3B3B;
+$gray-darker: #858585;
 
 
 /* variables with sense */
@@ -56,7 +57,13 @@ $main-screen__label--BShadow: $orange72;
 $hosting-prices--BGColor: $gray-light;
 $hosting-prices--Color: $gray;
 $hosting-prices__column-head--BGColor: $white;
+$hosting-prices__column-body--BGColor: $hosting-prices__column-head--BGColor;
 $hosting-prices__column-head-text--Color: $blue-darker;
+$hosting-prices__advantage--Color: $gray-darker;
+$hosting-prices__advantage_theme_main--Color: $black;
+$hosting-prices__price-container: $blue-darker;
+$hosting-prices__price_theme_old: $gray;
+$hosting-prices__link--Color: $orange;
 
 $CMS-support--BGColor-top-left: $blue-lightest;
 $CMS-support--BGColor-bottom-right: $blue-lighter;
