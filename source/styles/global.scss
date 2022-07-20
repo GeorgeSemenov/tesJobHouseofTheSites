@@ -13,11 +13,13 @@ body{
 main{
 }
 
-.content-container{
-  max-width: 1207px;
-  @include mx(auto);
-  @include px(15px);
-  box-sizing: border-box;
+section{
+  .content-container{
+    max-width: 1207px;
+    @include mx(auto);
+    @include px(15px);
+    box-sizing: border-box;
+  }
 }
 
 a {

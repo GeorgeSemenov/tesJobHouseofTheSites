@@ -1,0 +1,6 @@
+div.ssl-cert__swiper-button-navigation {
+  display: none;
+  @media (max-width: $xl - 1px) {
+    display: block;
+  }
+}

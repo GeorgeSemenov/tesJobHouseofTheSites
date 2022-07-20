@@ -1,3 +1,4 @@
+include __swiper-button-navigation/ssl-cert__swiper-button-navigation.pug
 include __button-container/ssl-cert__button-container.pug
 include __title-container/ssl-cert__title-container.pug
 include __ssl-price/ssl-cert__ssl-price.pug
@@ -11,8 +12,10 @@ include ../button/button.pug
 mixin ssl-cert(modifier)
   if modifier == undefined
     - modifier = {};
-  section.ssl-cert.swiper&attributes(attributes)
-    .content-container
+  section.ssl-cert&attributes(attributes)
+    .content-container.swiper
       +block-head(modifier.blockHead)(class="ssl-cert__block-head")
       +ssl-cert__ssl-types(modifier)(class="swiper-wrapper")
+      +ssl-cert__swiper-button-navigation(modifier)(class="swiper-button-prev")
+      +ssl-cert__swiper-button-navigation(modifier)(class="swiper-button-next")
       +ssl-cert__button-container(modifier)

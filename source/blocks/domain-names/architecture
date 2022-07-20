@@ -1,10 +1,11 @@
+text-container[texts,text,__text]{
+    button!buttonText!
+}
+Извлеки список в хостинг прайсес, пусть будет advantage-list (незабудь удалить ненужную миксину)
 domains-and-servers{
   section.domain-names{
-    block-head
-    __text-container[texts]{
-      __text
-      button
-    }
+    block-head,
+    text-container,
     ul__names[names]{
       li__name<name>{
         p__domain-abbr<name>
@@ -14,7 +15,19 @@ domains-and-servers{
   }
   section.servers{
     block-head,
-    picture__pic<pic>
-    __еtext
+    picture__pic<pic>,
+    text-container,
+    __kvm-prices{
+      h3__price-title<titleKVM>,
+      p__kvm-text<textKVM>,
+      advantage-list
+    },
+    __table[cells,cell{
+      text,
+      buttonText,
+      modifier
+    },__table-cell]{
+      buton!buttonText!
+    }
   }
 }
