@@ -1,0 +1,20 @@
+domains-and-servers{
+  section.domain-names{
+    block-head
+    __text-container[texts]{
+      __text
+      button
+    }
+    ul__names[names]{
+      li__name<name>{
+        p__domain-abbr<name>
+        p__price<price,period>
+      }
+    }
+  }
+  section.servers{
+    block-head,
+    picture__pic<pic>
+    __еtext
+  }
+}

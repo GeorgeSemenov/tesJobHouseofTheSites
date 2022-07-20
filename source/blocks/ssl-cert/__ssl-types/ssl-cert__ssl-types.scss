@@ -3,4 +3,9 @@
   grid-template-columns: repeat(4, 280px);
   gap: 20px;
   counter-reset: sslItems 0;
+  margin-bottom: 62px ; 
+
+  @media (max-width: $md - 1px){
+    margin-bottom: 15px ; 
+  }
 }

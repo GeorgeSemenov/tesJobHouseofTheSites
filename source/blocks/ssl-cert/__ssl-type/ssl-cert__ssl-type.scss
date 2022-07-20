@@ -5,15 +5,20 @@
   border-radius: 10px;
   position: relative;
   counter-increment: sslItems;
+  display: flex;
+  flex-direction: column;
+  min-height: 526px;
+  padding-bottom: 26px;
   
   &:before{
     content: counter(sslItems);
     position: absolute;
-    font-size: 20px;
     color: $ssl-cert__ssl-type-before--Color;
     font-weight: 600;
-    font-size: 72px;
+    font-size: 7.2rem;
     line-height: 150%;
     opacity: 0.5;
+    top: -8px;
+    left: 12px;
   }
 }
