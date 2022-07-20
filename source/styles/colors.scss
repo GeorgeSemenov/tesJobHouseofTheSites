@@ -12,6 +12,8 @@ $blue-dark: #3E708F;
 $blue-darker: #1B567C;
 $orange: #FA6232;
 $orange72: #FE8572;
+$gray-lightest: rgba(103, 168, 210, 0.1);
+$gray-lighter: rgba(103, 168, 210, 0.3);
 $gray-light: #E5E5E5;
 $gray: #3C3B3B;
 $gray-darker: #858585;
@@ -42,7 +44,10 @@ $contacts--Color: $white;
 $button--BGColor: $blue;
 $button-hover--BGColor: darken($button--BGColor, 15%);
 $button-active--BGColor: darken($button--BGColor, 30%);
-$button_theme_orangeo--BGColor: $orange;
+$button--Color: $white;
+$button_theme_orange--BGColor: $orange;
+$button_theme_dark-blue--BGColor: $blue;
+$button_theme_dark-blue--Color: $white;
 
 $block-head--Color: $gray;
 $block-head_theme_main__head--Color: $white;
@@ -64,6 +69,14 @@ $hosting-prices__advantage_theme_main--Color: $black;
 $hosting-prices__price-container: $blue-darker;
 $hosting-prices__price_theme_old: $gray;
 $hosting-prices__link--Color: $orange;
+$hosting-prices__proposals-title--Color: $gray;
+$hosting-prices__proposals: $blue-darker;
 
 $CMS-support--BGColor-top-left: $blue-lightest;
 $CMS-support--BGColor-bottom-right: $blue-lighter;
+
+$ssl-cert__ssl-title--Color: $blue-darker;
+$ssl-cert__ssl-type--BGColor: $gray-lightest;
+$ssl-cert__ssl-type--BColor: $gray-lighter;
+$ssl-cert__title-container-after--BGColor: $blue-darker;
+$ssl-cert__ssl-type-before--Color: $blue;

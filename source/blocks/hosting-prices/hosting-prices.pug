@@ -1,3 +1,9 @@
+include __proposal/hosting-prices__proposal.pug
+include __proposals/hosting-prices__proposals.pug
+include __proposals-title/hosting-prices__proposals-title.pug
+include __proposals-side/hosting-prices__proposals-side.pug
+include __proposals-pic/hosting-prices__proposals-pic.pug
+include __proposals-section/hosting-prices__proposals-section.pug
 include __link-container/hosting-prices__link-container.pug
 include __bodies/hosting-prices__bodies.pug
 include __heads/hosting-prices__heads.pug
@@ -25,3 +31,4 @@ mixin hosting-prices(modifier)
       +block-head(modifier.blockHead)(class="hosting-prices__block-head")
       +hosting-prices__grid(modifier)
       +hosting-prices__link-container(modifier.link)
+      +hosting-prices__proposals-section(modifier)

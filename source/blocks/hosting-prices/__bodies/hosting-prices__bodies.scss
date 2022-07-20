@@ -1,5 +1,5 @@
 .hosting-prices__bodies {
   display: grid;
   grid-template-columns: repeat(4,$column-width);
-  gap: 20px;
+  gap: $columns-gap;
 }

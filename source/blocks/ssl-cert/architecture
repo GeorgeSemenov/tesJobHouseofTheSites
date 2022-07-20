@@ -1,0 +1,11 @@
+ssl-cert{block-head ul__ssl-types[
+
+sslTypes]{
+  li__ssl-type{
+    h3__ssl-title<title> 
+    ul__ssl-advantages[advantages]{
+      li__ssl-advantage
+    } 
+    __ssl-price<price,period> 
+  }   
+}  

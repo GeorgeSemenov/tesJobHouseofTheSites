@@ -1,0 +1,12 @@
+.hosting-prices__proposals-side {
+  padding-left: 40px;
+  padding-top: 49px;
+  margin-bottom: 15px;
+  @media (max-width: $xl - 1px) { 
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  @media (max-width: $md - 1px) { 
+    order: 1;  
+  }
+}

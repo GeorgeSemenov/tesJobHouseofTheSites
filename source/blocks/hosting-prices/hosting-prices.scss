@@ -1,10 +1,10 @@
 .hosting-prices {
-  padding-top: 95px;
+  @include py(95px);
   background-color: $hosting-prices--BGColor;
   color: $hosting-prices--Color;
 
   @media (max-width: $md - 1px){
-    padding-top: 15px;
+    @include py(15px);
   }
 }
 $column-width : 280px;
@@ -23,6 +23,8 @@ columns: [{
           }],
 gridLabel,
 link:{href,text},
+proposalsTitle: "",
+proposals: [{modifier:"", proposal:""}]
 
 $column-width// указывает на ширину колонки (для column-head и для column-body), прописывается в hosting-prices перед остальными стилями,
 $columns-gap// указывает на ширину между колонками , прописывается в hosting-prices перед остальными стилями,
@@ -31,6 +33,7 @@ $hosting-prices--BGColor;
 $hosting-prices__column-head--BGColor;
 $hosting-prices__column-head-text--Color;
 $hosting-prices--Color;
+$hosting-prices__proposals-title--Color;
 */
 @import '__block-head/hosting-prices__block-head';
 @import '__grid/hosting-prices__grid';
@@ -48,3 +51,9 @@ $hosting-prices--Color;
 @import '__heads/hosting-prices__heads';
 @import '__bodies/hosting-prices__bodies';
 @import '__link-container/hosting-prices__link-container';
+@import '__proposals-section/hosting-prices__proposals-section';
+@import '__proposals-pic/hosting-prices__proposals-pic';
+@import '__proposals-side/hosting-prices__proposals-side';
+@import '__proposals-title/hosting-prices__proposals-title';
+@import '__proposals/hosting-prices__proposals';
+@import '__proposal/hosting-prices__proposal';

@@ -1,0 +1,11 @@
+.hosting-prices__proposals-title {
+  font-size: 2.4rem;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $hosting-prices__proposals-title--Color;
+  margin-bottom: 45px;
+  @media (max-width: $xl - 1px) { 
+    text-align: center;  
+  }
+}

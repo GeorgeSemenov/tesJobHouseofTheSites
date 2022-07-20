@@ -1,0 +1,4 @@
+mixin hosting-prices__proposals-title(modifier)
+  if modifier["proposalsTitle"] == undefined
+    - modifier["proposalsTitle"] = "empty__proposalsTitle";
+  h3.hosting-prices__proposals-title&attributes(attributes)!=modifier.proposalsTitle

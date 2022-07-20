@@ -1,0 +1,18 @@
+.ssl-cert__title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 175px;
+  padding-right: 7px;
+  position: relative;
+
+  &:after{
+    content: "";
+    position: absolute;
+    width: 64%;
+    height: 0.5px;
+    bottom: 13px;
+    left: 16%;
+    background-color: $ssl-cert__title-container-after--BGColor;      
+  }
+}

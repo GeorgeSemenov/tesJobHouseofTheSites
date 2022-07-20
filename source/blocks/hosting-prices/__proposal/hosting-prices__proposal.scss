@@ -1,0 +1,9 @@
+.hosting-prices__proposal {
+  position: relative;
+  padding-left: 42px;
+  margin-bottom: 23px;
+  &:before{
+    content:"";
+    @include round-checkbox;
+  }
+}

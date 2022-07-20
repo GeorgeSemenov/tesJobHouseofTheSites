@@ -1,0 +1,8 @@
+mixin hosting-prices__proposals(modifier)
+  if modifier["proposals"] == undefined
+    - modifier["proposals"] = [{}];
+  ul.hosting-prices__proposals&attributes(attributes)
+    each proposal in modifier.proposals
+      if proposal["modifier"] == undefined
+        - proposal["modifier"] = "";
+      +hosting-prices__proposal(proposal)(class=proposal.modifier)

@@ -8,6 +8,7 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   cursor: pointer;
+  color: $button--Color;
   &:hover{background-color: $button-hover--BGColor}
   &:active{background-color: $button-active--BGColor}
   @media (max-width: $md - 1px){
@@ -16,7 +17,11 @@
   }
 
   &_theme_orange{
-    background-color: $button_theme_orangeo--BGColor;
+    background-color: $button_theme_orange--BGColor;
+  }
+  &_theme_dark-blue{
+    background-color: $button_theme_dark-blue--BGColor;
+    color: $button_theme_dark-blue--Color;
   }
 }
 

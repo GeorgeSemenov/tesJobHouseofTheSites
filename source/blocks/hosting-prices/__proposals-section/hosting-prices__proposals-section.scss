@@ -1,0 +1,9 @@
+.hosting-prices__proposals-section {
+  display: flex;
+  justify-content: space-between;
+
+  @media (max-width: $xl - 1px) { 
+    flex-direction: column;
+    align-items: center;
+  }
+}

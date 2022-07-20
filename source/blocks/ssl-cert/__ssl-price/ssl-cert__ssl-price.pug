@@ -2,6 +2,6 @@ mixin ssl-cert__ssl-price(modifier)
   if modifier["price"] == undefined
     - modifier["price"] = "empty__price";
   if modifier["period"] == undefined
-    - modifier["perioD"] = "";
+    - modifier["period"] = "";
   p.ssl-cert__ssl-price&attributes(attributes)!=modifier.price
     span!=modifier.period

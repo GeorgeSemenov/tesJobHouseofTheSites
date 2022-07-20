@@ -1,3 +1,19 @@
 .ssl-cert__ssl-type {
-  padding: 0;
+  background: $ssl-cert__ssl-type--BGColor;
+  border: $ssl-cert__ssl-type--BGColor;
+  box-shadow: 0px 4px 4px rgba(183, 183, 183, 0.43);
+  border-radius: 10px;
+  position: relative;
+  counter-increment: sslItems;
+  
+  &:before{
+    content: counter(sslItems);
+    position: absolute;
+    font-size: 20px;
+    color: $ssl-cert__ssl-type-before--Color;
+    font-weight: 600;
+    font-size: 72px;
+    line-height: 150%;
+    opacity: 0.5;
+  }
 }

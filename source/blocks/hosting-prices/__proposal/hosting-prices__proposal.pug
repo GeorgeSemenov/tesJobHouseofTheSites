@@ -1,0 +1,4 @@
+mixin hosting-prices__proposal(modifier)
+  if modifier["proposal"] == undefined
+    - modifier["proposal"] = "empty__proposal";
+  li.hosting-prices__proposal&attributes(attributes)!=modifier.proposal

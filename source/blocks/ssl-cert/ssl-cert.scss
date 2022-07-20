@@ -1,5 +1,5 @@
 .ssl-cert {
-  padding: 0;
+  padding: 95px 0;
 }
 /*
 blockHead: {headTag: "",
@@ -15,6 +15,8 @@ sslTypes: [{modifier: "", sslType:{
   },
 }],
 buttonText: "",
+
+$ssl-cert__ssl-title--Color;
 */
 @import '__block-head/ssl-cert__block-head';
 @import '__ssl-types/ssl-cert__ssl-types';
@@ -24,3 +26,4 @@ buttonText: "",
 @import '__ssl-advantage/ssl-cert__ssl-advantage';
 @import '__ssl-price/ssl-cert__ssl-price';
 @import '__button/ssl-cert__button';
+@import '__title-container/ssl-cert__title-container';
