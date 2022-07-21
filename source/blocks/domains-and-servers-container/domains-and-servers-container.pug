@@ -2,5 +2,6 @@ include ../domain-names/domain-names.pug
 include ../servers/servers.pug
 mixin domains-and-servers-container(modifier)
   .domains-and-servers-container&attributes(attributes)
-    +domain-names(modifier)
-    +servers(modifier)
+    .content-container
+      +domain-names(modifier.domainNames)
+      +servers(modifier.servers)

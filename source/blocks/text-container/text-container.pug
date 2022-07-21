@@ -1,2 +1,14 @@
+include __text/text-container__text.pug
+include ../button/button.pug
 mixin text-container(modifier)
+  if modifier == undefined
+    - modifier = {};
+  if modifier["texts"] == undefined
+    - modifier["texts"] = [{}];
   .text-container&attributes(attributes)
+    each text in modifier.texts
+      if text["modifier"] == undefined
+        - text["modifier"] = "";
+      +text-container__text(text)(class=text.modifier)
+    if modifier["buttonText"] != undefined
+      +button(modifier)(class="text-container__button button_theme_orange")

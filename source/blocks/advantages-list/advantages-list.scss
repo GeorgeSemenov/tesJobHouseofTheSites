@@ -1,3 +1,11 @@
 .advantages-list {
-  padding: 0;  
+  font-weight: 600;
+  font-size: 2rem;
+  line-height: 150%;
+  color: $advantages-list--Color;
+  position: relative;
 }
+/*
+advantages: [{modifier: "",text:""},]
+*/
+@import '__advantage/advantages-list__advantage';

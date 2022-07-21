@@ -1,6 +1,11 @@
 .domain-names {
-  padding: 0;  
+  padding: 50px 0;
 }
+/*
+blockHead:{text:"",},
+textContainer:{texts:[], buttonText:""},
+domainNames: [{name:"",price:"",period:"",}],
+*/
 @import '__names/domain-names__names';
 @import '__domain-abbr/domain-names__domain-abbr';
 @import '__price/domain-names__price';

@@ -1,3 +1,16 @@
 .text-container {
-  padding: 0;  
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: $text-container--Color;
+  padding-top: 100px;
+  @media (max-width: $lg - 1px){
+    padding-top: 15px ;
+  }
 }
+/*
+texts:[""],
+buttonText:"";
+*/
+@import '__text/text-container__text';
+@import '__button/text-container__button';

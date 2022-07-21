@@ -8,6 +8,6 @@ mixin domain-names(modifier)
   if modifier == undefined
     - modifier = {};
   section.domain-names&attributes(attributes)
-    +block-head(modifier)(class="domain-names__block-head")
-    +text-container(modifier)(class="domain-names__text-container")
+    +block-head(modifier.blockHead)(class="domain-names__block-head")
+    +text-container(modifier.textContainer)(class="domain-names__text-container")
     +domain-names__names(modifier)

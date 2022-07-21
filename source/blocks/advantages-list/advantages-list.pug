@@ -1,2 +1,11 @@
+include __advantage/advantages-list__advantage.pug
+if modifier == undefined
+  - modifier = {};
+if modifier["advantages"] == undefined
+  - modifier["advantages"] = [{}];
 mixin advantages-list(modifier)
-  .advantages-list&attributes(attributes)
+  ul.advantages-list&attributes(attributes)
+    each advantage in modifier.advantages
+      if advantage["modifier"] == undefined
+        - advantage["modifier"] = "";
+      +advantages-list__advantage(advantages)(class=advantage.modifier)

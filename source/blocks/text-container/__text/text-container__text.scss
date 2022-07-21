@@ -1,0 +1,6 @@
+.text-container__text {
+  margin-bottom: 23px ;
+  &:last-child{
+    margin-bottom: 0 ;
+  }
+}

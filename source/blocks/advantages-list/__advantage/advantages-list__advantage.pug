@@ -1,0 +1,4 @@
+mixin advantages-list__advantage(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  li.advantages-list__advantage&attributes(attributes)!=modifier.text

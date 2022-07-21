@@ -12,8 +12,8 @@ mixin servers(modifier)
   if modifier == undefined
     - modifier = {};
   section.servers&attributes(attributes)
-    +block-head(modifier)(class="servers__block-head")
+    +block-head(modifier.blockHead)(class="servers__block-head")
     +servers__pic(modifier)
-    +text-container(modifier)(class="servers__text-container")
+    +text-container(modifier.textContainer)(class="servers__text-container")
     +servers__kvm-prices(modifier)
     +servers__table(modifier)

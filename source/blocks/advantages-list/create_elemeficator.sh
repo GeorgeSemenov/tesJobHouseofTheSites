@@ -25,5 +25,5 @@ cat >> advantages-list.scss << end3
 end3
 cd ${fileName}
 cat >> ${parentName}${fileName}.scss << end4
-.${parentName}${fileName} {}
+.${parentName}${fileName} {padding: 0}
 end4

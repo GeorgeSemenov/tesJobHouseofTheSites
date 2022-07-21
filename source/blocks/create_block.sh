@@ -55,7 +55,7 @@ cat >> ${styleSCSS} << end3
 end3
 cd ${dollar}{fileName}
 cat >> ${dollar}{parentName}${dollar}{fileName}.scss << end4
-.${dollar}{parentName}${dollar}{fileName} {}
+.${dollar}{parentName}${dollar}{fileName} {padding: 0}
 end4
 end
 # Создаём новый bat файл для элементов или модификаторов

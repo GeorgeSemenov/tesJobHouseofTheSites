@@ -1,0 +1,4 @@
+mixin text-container__text(modifier)
+  if modifier == undefined
+    - modifier = "empty__text";
+  p.text-container__text&attributes(attributes)!=modifier

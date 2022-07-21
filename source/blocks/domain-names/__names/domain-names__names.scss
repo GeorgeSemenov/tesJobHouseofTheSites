@@ -1,1 +1,8 @@
-.domain-names__names {}
+.domain-names__names {
+  width: 50%;
+  display: inline-block;
+  @media (max-width: $lg - 1px){
+    display: block;
+    width: 100%;
+  }
+}
