@@ -4,6 +4,7 @@ include ../../blocks/header/header.pug
 include ../../blocks/hosting-prices/hosting-prices.pug
 include ../../blocks/CMS-support/CMS-support.pug
 include ../../blocks/ssl-cert/ssl-cert.pug
+include ../../blocks/domains-and-servers-container/domains-and-servers-container.pug
 
 doctype html
 html(lang="ru")
@@ -259,3 +260,4 @@ html(lang="ru")
         ],
         buttonText: "Заказать SSL сертификат",
       })
+      +domains-and-servers-container({})

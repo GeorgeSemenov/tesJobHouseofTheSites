@@ -1,0 +1,4 @@
+mixin servers__price-title(modifier)
+  if modifier["titleKVM"] == undefined
+    - modifier["titleKVM"] = "empty__titleKVM";
+  h3.servers__price-title&attributes(attributes)!=modifier.titleKVM

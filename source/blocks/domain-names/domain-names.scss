@@ -1,3 +1,9 @@
 .domain-names {
   padding: 0;  
 }
+@import '__names/domain-names__names';
+@import '__domain-abbr/domain-names__domain-abbr';
+@import '__price/domain-names__price';
+@import '__block-head/domain-names__block-head';
+@import '__text-container/domain-names__text-container';
+@import '__name/domain-names__name';

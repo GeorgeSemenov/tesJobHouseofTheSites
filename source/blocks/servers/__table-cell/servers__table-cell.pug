@@ -1,0 +1,6 @@
+mixin servers__table-cell(modifier)
+  .servers__table-cell&attributes(attributes)!
+    if modifier["text"] != undefined
+      |#{modifier.text}
+    if modifier["buttonText"] != undefined
+      +button(modifier)(class="servers__button")

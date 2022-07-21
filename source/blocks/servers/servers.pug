@@ -1,0 +1,19 @@
+include __table-cell/servers__table-cell.pug
+include __table/servers__table.pug
+include __kvm-text/servers__kvm-text.pug
+include __price-title/servers__price-title.pug
+include __kvm-prices/servers__kvm-prices.pug
+include __text-container/servers__text-container.pug
+include __pic/servers__pic.pug
+include ../block-head/block-head.pug
+include ../text-container/text-container.pug
+include ../advantages-list/advantages-list.pug
+mixin servers(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.servers&attributes(attributes)
+    +block-head(modifier)(class="servers__block-head")
+    +servers__pic(modifier)
+    +text-container(modifier)(class="servers__text-container")
+    +servers__kvm-prices(modifier)
+    +servers__table(modifier)

@@ -1,0 +1,8 @@
+mixin servers__table(modifier)
+  if modifier["cells"] == undefined
+    - modifier["cells"] = [];
+  .servers__table&attributes(attributes)
+    each cell in modifier.cells
+      if cell["modifier"] == undefined
+        - cell["modifier"] = "";
+      +servers__table-cell(cell)(class=cell.modifier)

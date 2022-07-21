@@ -1,0 +1,17 @@
+section.servers{
+  block-head,
+  picture__pic<pic>,
+  text-container,
+  __kvm-prices{
+    h3__price-title<titleKVM>,
+    p__kvm-text<textKVM>,
+    advantage-list
+  },
+  __table[cells,cell{
+    text,
+    buttonText,
+    modifier
+  },__table-cell]{
+    buton!buttonText!
+  }
+}

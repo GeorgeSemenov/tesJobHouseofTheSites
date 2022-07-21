@@ -1,0 +1,8 @@
+mixin domain-names__price(modifier)
+  if modifier["price"] == undefined
+    - modifier["price"] = "empty__price";
+  if modifier["period"] == undefined
+    - modifier["period"] = "";
+  p.domain-names__price&attributes(attributes)!=modifier.price
+    if modifier["period"] != undefined
+      span!=modifier.period

@@ -1,0 +1,4 @@
+mixin servers__kvm-text(modifier)
+  if modifier["textKVM"] == undefined
+    - modifier["textKVM"] = "empty__textKVM";
+  p.servers__kvm-text&attributes(attributes)!=modifier.textKVM

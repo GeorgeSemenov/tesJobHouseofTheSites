@@ -1,0 +1,19 @@
+.servers {
+  padding: 0;  
+}
+/*
+titleKVM:"",
+textKVM: "",
+advantage-list:[{}],
+cells:[{modifier,text,buttonText}],
+*/
+@import '__block-head/servers__block-head';
+@import '__pic/servers__pic';
+@import '__text-container/servers__text-container';
+@import '__kvm-prices/servers__kvm-prices';
+@import '__price-title/servers__price-title';
+@import '__kvm-text/servers__kvm-text';
+@import '__table/servers__table';
+@import '__table-cell/servers__table-cell';
+@import '__buton/servers__buton';
+@import '__advantages-list/servers__advantages-list';
