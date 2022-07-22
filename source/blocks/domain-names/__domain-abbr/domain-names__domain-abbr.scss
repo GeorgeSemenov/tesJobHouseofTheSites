@@ -1,1 +1,15 @@
-.domain-names__domain-abbr {}
+.domain-names__domain-abbr {
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $domain-names__domain-abbr--Color;
+  background-image: $domain-names__domain-abbr--BGImage;
+  height: 55px;
+  width: 55px;
+
+  display: inline-block;
+  border-radius: 100%;
+
+  box-sizing: border-box;
+  padding-top: 10px;
+  padding-left: 18px;
+}

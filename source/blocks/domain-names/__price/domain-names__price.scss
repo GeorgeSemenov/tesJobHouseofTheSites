@@ -1,1 +1,10 @@
-.domain-names__price {}
+.domain-names__price {
+    min-width: 78px;
+    span{
+        display: block;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 10px;
+        text-align: center;
+    }
+}

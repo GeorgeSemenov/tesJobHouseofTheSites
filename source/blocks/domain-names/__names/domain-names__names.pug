@@ -1,8 +1,8 @@
 mixin domain-names__names(modifier)
-  if modifier["names"] == undefined
-    - modifier["names"] = [{}];
+  if modifier["domainNames"] == undefined
+    - modifier["domainNames"] = [{}];
   ul.domain-names__names&attributes(attributes)
-    each name in modifier.names
+    each name in modifier.domainNames
       if name["modifier"] == undefined
         - name["modifier"] = "";
       +domain-names__name(name)(class=name.modifier)

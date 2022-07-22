@@ -1,9 +1,9 @@
 include ../../blocks/favicon/favicon.pug
-//- include ../../blocks/main-screen/main-screen.pug
-//- include ../../blocks/header/header.pug
+include ../../blocks/main-screen/main-screen.pug
+include ../../blocks/header/header.pug
 include ../../blocks/hosting-prices/hosting-prices.pug
-//- include ../../blocks/CMS-support/CMS-support.pug
-//- include ../../blocks/ssl-cert/ssl-cert.pug
+include ../../blocks/CMS-support/CMS-support.pug
+include ../../blocks/ssl-cert/ssl-cert.pug
 include ../../blocks/domains-and-servers-container/domains-and-servers-container.pug
 
 doctype html
@@ -15,58 +15,56 @@ html(lang="ru")
     link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
     +favicon()
   body
-    //- +header({
-    //-   buttonText: " Купить хостинг",
-    //-   contacts:[
-    //-     {
-    //-       link:"tel:+74951234556",
-    //-       pic: 'phone',
-    //-       text: "+7 (495) 123-45-56",
-    //-     },
-    //-     {
-    //-       link: "mailto:support@wshost.ru",
-    //-       pic: 'mail',
-    //-       text: "support@wshost.ru",
-    //-       substr: ["(поддержка ","24/7",")"],
-    //-     },
-    //-   ],
-    //-   services:[
-    //-     {text:"хостинг"},
-    //-     {text:"VPS"},
-    //-     {text:"регистрация доменов"},
-    //-     {text:"SSL"},
-    //-     {
-    //-       text: `хостинг-провайдер`,
-    //-       subItems: [
-    //-         {text: "subItem 1"},
-    //-         {text: "subItem 2"},
-    //-         {text: "subItem 3"},
-    //-       ]
-    //-     }
-    //-   ]
-    //- })
+    +header({
+      buttonText: " Купить хостинг",
+      contacts:[
+        {
+          link:"tel:+74951234556",
+          pic: 'phone',
+          text: "+7 (495) 123-45-56",
+        },
+        {
+          link: "mailto:support@wshost.ru",
+          pic: 'mail',
+          text: "support@wshost.ru",
+          substr: ["(поддержка ","24/7",")"],
+        },
+      ],
+      services:[
+        {text:"хостинг"},
+        {text:"VPS"},
+        {text:"регистрация доменов"},
+        {text:"SSL"},
+        {
+          text: `хостинг-провайдер`,
+          subItems: [
+            {text: "subItem 1"},
+            {text: "subItem 2"},
+            {text: "subItem 3"},
+          ]
+        }
+      ]
+    })
     main
-      //- +main-screen({
-      //-   blockHead:{
-      //-     headTag : "h1",
-      //-     text: "Платный хостинг для сайта",
-      //-   },
-      //-   advantagesList:{
-      //-     advantages: [
-      //-       {
-      //-         text:"Совместим с любыми CMS:", 
-      //-         description:"1С-Битрикс, Wordpress, Opencart, DLE, Joomla и др.",
-      //-       },
-      //-       {
-      //-         text: "Всё включено:",
-      //-         description: "PHP 5.4 – 8.0, Perl, FTP, MySQL, ISPManager",
-      //-       }
-      //-     ]
-      //-   },
-      //-   labelText: "Всего от ",
-      //-   labelHighlightedText: "99 ₽ в месяц!",
-      //-   buttonText: "Заказать хостинг",
-      //- })
+      +main-screen({
+        blockHead:{
+          headTag : "h1",
+          text: "Платный хостинг для сайта",
+        },
+        advantages: [
+          {
+            text:"Совместим с любыми CMS:", 
+            description:"1С-Битрикс, Wordpress, Opencart, DLE, Joomla и др.",
+          },
+          {
+            text: "Всё включено:",
+            description: "PHP 5.4 – 8.0, Perl, FTP, MySQL, ISPManager",
+          }
+        ],
+        labelText: "Всего от ",
+        labelHighlightedText: "99 ₽ в месяц!",
+        buttonText: "Заказать хостинг",
+      })
       +hosting-prices({
         blockHead: {
           text: "Тарифы на хостинг", 
@@ -158,120 +156,120 @@ html(lang="ru")
         gridLabel:"Неограниченно сайтов, баз данных MySQL, FTP аккаунтов и почтовых ящиков",
         link:{href:"#!",text: "Посмотреть все характеристики нашего хостинга"},
         proposalsTitle: "Вместе с хостингом Вы получите",
-        advantageList: {
+        advantagesList: {
           advantages: [
-            {proposal:"30 дней на тестовый период + 100% возврат денег, если хостинг не подойдёт"},
-            {proposal:"Хостинг в подарок при оплате тарифа на 1 год"},
-            {proposal:"Бесплатный перенос сайта от другого хостинг-провайдера"},
+            {text:"30 дней на тестовый период + 100% возврат денег, если хостинг не подойдёт"},
+            {text:"Хостинг в подарок при оплате тарифа на 1 год"},
+            {text:"Бесплатный перенос сайта от другого хостинг-провайдера"},
           ]
         },
       })
-      //- +CMS-support({
-      //-   blockHead: {
-      //-     text: "Хостинг с поддержкой любой CMS",
-      //-     description: [
-      //-       ["На нашем виртуальном хостинге вы сможете разместить сайт на ", "любой CMS", ",<br/>а также установить в два клика любую популярную систему управлению сайтом"]
-      //-     ],
-      //-   },
-      //-   logos:[
-      //-     {logo:"1c"},
-      //-     {logo:"WordPress"},
-      //-     {logo:"Joomla"},
-      //-     {logo:"MODX"},
-      //-     {logo:"opencart"},
-      //-     {logo:"umiCMS"},
-      //-     {logo:"drupal"},
-      //-     {logo:"instantCMS"},
-      //-     {logo:"netcat"},
-      //-     {logo:"phpBB"},
-      //-     {logo:"shopscript"},
-      //-     {logo:"DLE"},
-      //-     {logo:"hostcms"},
-      //-     {logo:"prestashop"},
-      //-   ],
-      //- })
-      //- +ssl-cert({
-      //-   blockHead: {
-      //-     text: "SSL-сертификаты",
-      //-     description: [
-      //-       ["Купить SSL и попасть в TOP Google. WSHOST предлагает низкие цены и быстрый выпуск за счет ", "уникальных", " партнерских условий с удостоверяющими центрами."],
-      //-       ["Подберите сертификат исходя из задач и предпочтений, удобные фильтры и описание помогут определиться"]
-      //-     ],
-      //-   },
-      //-   sslTypes: [
-      //-     {
-      //-       modifier: "", 
-      //-       sslType:{
-      //-         title:"SSL для сайта<br/>Comodo PositiveSSL",
-      //-         advantages: [
-      //-           {advantage: "Доступен физическим лицам"},
-      //-           {advantage: "Защита 1го домена"},
-      //-           {advantage: "Поддержка IDN доменов"},
-      //-           {advantage: "Низкая степень доверия"},
-      //-           {advantage: "Совместимость с браузерами: 96%"},
-      //-           {advantage: "Автоустановка на наш хостинг"},
-      //-         ],
-      //-         price:{price:"900 ₽", period: "/ год"}
-      //-       },
-      //-     },
-      //-     {
-      //-       modifier: "", 
-      //-       sslType:{
-      //-         title:"SSL для магазина<br/>Positive SSL MDC<br/>(3 domains)",
-      //-         advantages: [
-      //-           {advantage: "Доступен физическим лицам"},
-      //-           {advantage: "Защита 3х доменов"},
-      //-           {advantage: "Опция добавления доменов"},
-      //-           {advantage: "Поддержка IDN доменов"},
-      //-           {advantage: "Достаточная степень доверия"},
-      //-           {advantage: "Совместимость с браузерами: 99.8%"},
-      //-           {advantage: "Автоустановка на наш хостинг"},
-      //-         ],
-      //-         price:{price:"3800 ₽", period: "/ год"}
-      //-       },
-      //-     },
-      //-     {
-      //-       modifier: "", 
-      //-       sslType:{
-      //-         title:"С защитой поддоменов<br/>Essential SSL Wildcard",
-      //-         advantages: [
-      //-           {advantage: "Доступен физическим лицам"},
-      //-           {advantage: "Защита всех поддоменов"},
-      //-           {advantage: "Поддержка IDN доменов"},
-      //-           {advantage: "Достаточная степень доверия"},
-      //-           {advantage: "Совместимость с браузерами: 99.8%"},
-      //-           {advantage: "Автоустановка на наш хостинг"},
-      //-         ],
-      //-         price:{price:"6700 ₽", period: "/ год"}
-      //-       },
-      //-     },
-      //-     {
-      //-       modifier: "", 
-      //-       sslType:{
-      //-         title:"С зеленой строкой<br/>True BusinessID with EV",
-      //-         advantages: [
-      //-           {advantage: "Только для юридических лиц"},
-      //-           {advantage: "Защита одного домена"},
-      //-           {advantage: "Зеленая адресная строка"},
-      //-           {advantage: "Наивысшая степень доверия"},
-      //-           {advantage: "Без поддержки IDN"},
-      //-           {advantage: "Совместимость с браузерами: 99.9%"},
-      //-           {advantage: "Автоустановка на наш хостинг"},
-      //-         ],
-      //-         price:{price:"12600 ₽", period: "/ год"}
-      //-       },
-      //-     },
-      //-   ],
-      //-   buttonText: "Заказать SSL сертификат",
-      //- })
+      +CMS-support({
+        blockHead: {
+          text: "Хостинг с поддержкой любой CMS",
+          description: [
+            ["На нашем виртуальном хостинге вы сможете разместить сайт на ", "любой CMS", ",<br/>а также установить в два клика любую популярную систему управлению сайтом"]
+          ],
+        },
+        logos:[
+          {logo:"1c"},
+          {logo:"WordPress"},
+          {logo:"Joomla"},
+          {logo:"MODX"},
+          {logo:"opencart"},
+          {logo:"umiCMS"},
+          {logo:"drupal"},
+          {logo:"instantCMS"},
+          {logo:"netcat"},
+          {logo:"phpBB"},
+          {logo:"shopscript"},
+          {logo:"DLE"},
+          {logo:"hostcms"},
+          {logo:"prestashop"},
+        ],
+      })
+      +ssl-cert({
+        blockHead: {
+          text: "SSL-сертификаты",
+          description: [
+            ["Купить SSL и попасть в TOP Google. WSHOST предлагает низкие цены и быстрый выпуск за счет ", "уникальных", " партнерских условий с удостоверяющими центрами."],
+            ["Подберите сертификат исходя из задач и предпочтений, удобные фильтры и описание помогут определиться"]
+          ],
+        },
+        sslTypes: [
+          {
+            modifier: "", 
+            sslType:{
+              title:"SSL для сайта<br/>Comodo PositiveSSL",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита 1го домена"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Низкая степень доверия"},
+                {advantage: "Совместимость с браузерами: 96%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"900 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"SSL для магазина<br/>Positive SSL MDC<br/>(3 domains)",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита 3х доменов"},
+                {advantage: "Опция добавления доменов"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Достаточная степень доверия"},
+                {advantage: "Совместимость с браузерами: 99.8%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"3800 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"С защитой поддоменов<br/>Essential SSL Wildcard",
+              advantages: [
+                {advantage: "Доступен физическим лицам"},
+                {advantage: "Защита всех поддоменов"},
+                {advantage: "Поддержка IDN доменов"},
+                {advantage: "Достаточная степень доверия"},
+                {advantage: "Совместимость с браузерами: 99.8%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"6700 ₽", period: "/ год"}
+            },
+          },
+          {
+            modifier: "", 
+            sslType:{
+              title:"С зеленой строкой<br/>True BusinessID with EV",
+              advantages: [
+                {advantage: "Только для юридических лиц"},
+                {advantage: "Защита одного домена"},
+                {advantage: "Зеленая адресная строка"},
+                {advantage: "Наивысшая степень доверия"},
+                {advantage: "Без поддержки IDN"},
+                {advantage: "Совместимость с браузерами: 99.9%"},
+                {advantage: "Автоустановка на наш хостинг"},
+              ],
+              price:{price:"12600 ₽", period: "/ год"}
+            },
+          },
+        ],
+        buttonText: "Заказать SSL сертификат",
+      })
       +domains-and-servers-container({
         domainNames:{
           blockHead:{text:"Доменные имена",},
-            textContainer:{
-              texts:[
-                "Правильное название сайта — залог трафика и успешной рекламы.  Домен должен ассоциироваться у пользователя с конкретными услугами или отраслью. ",
-                "Часто говорят: «Посмотри на auto.ru» и становится понятно, что речь про ресурс, который связан с автомобилями. Точно так же и с другими сайтами, в имени которых заложен смысл их деятельности. ",
-                "Помимо основных, выделяют специальные - тематические зоны: .travel, .site, .pro и т.д.",
+          textContainer:{
+            texts:[
+              "Правильное название сайта — залог трафика и успешной рекламы.  Домен должен ассоциироваться у пользователя с конкретными услугами или отраслью. ",
+              "Часто говорят: «Посмотри на auto.ru» и становится понятно, что речь про ресурс, который связан с автомобилями. Точно так же и с другими сайтами, в имени которых заложен смысл их деятельности. ",
+              "Помимо основных, выделяют специальные - тематические зоны: .travel, .site, .pro и т.д.",
             ],
             buttonText: "Подобрать и зарегистрировать домен"
           },
@@ -298,11 +296,13 @@ html(lang="ru")
           },
           titleKVM:"Цены на VPS KVM",
           textKVM: "На каждом VPS сервере для вас уже включено:",
-          advantageList:[
-            {text: "Root-доступ",},
-            {text: "Защиты от DDoS",},
-            {text: "Домен в подарок при оплате за 1 год",},
-          ],
+          advantagesList:{
+            advantages:[
+              {text: "Root-доступ",},
+              {text: "Защиты от DDoS",},
+              {text: "Домен в подарок при оплате за 1 год",},
+            ],
+          },
           cells:[
             {text:" "},
             {text:"Start VPS"},

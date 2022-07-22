@@ -1,3 +1,4 @@
+include __content/domain-names__content.pug
 include __name/domain-names__name.pug
 include __price/domain-names__price.pug
 include __domain-abbr/domain-names__domain-abbr.pug
@@ -9,5 +10,4 @@ mixin domain-names(modifier)
     - modifier = {};
   section.domain-names&attributes(attributes)
     +block-head(modifier.blockHead)(class="domain-names__block-head")
-    +text-container(modifier.textContainer)(class="domain-names__text-container")
-    +domain-names__names(modifier)
+    +domain-names__content(modifier)

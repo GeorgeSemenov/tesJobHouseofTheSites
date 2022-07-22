@@ -8,4 +8,4 @@ mixin advantages-list(modifier)
     each advantage in modifier.advantages
       if advantage["modifier"] == undefined
         - advantage["modifier"] = "";
-      +advantages-list__advantage(advantages)(class=advantage.modifier)
+      +advantages-list__advantage(advantage)(class=advantage.modifier)
