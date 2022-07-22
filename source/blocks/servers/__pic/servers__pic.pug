@@ -1,2 +1,6 @@
 mixin servers__pic(modifier)
-  .servers__pic&attributes(attributes)
+  picture.servers__pic&attributes(attributes)
+    source(type='image/webp' srcset=require('../../img/servers-pic-mobile.webp') media="(max-width: 543px)")
+    source(type='image/webp' srcset=require('../../img/servers-pic.webp') media="(min-width: 544px)")
+    img(src=require('../../img/servers-pic.webp') alt="servers-pic")
+  

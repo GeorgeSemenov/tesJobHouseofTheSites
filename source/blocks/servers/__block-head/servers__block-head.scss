@@ -1,1 +1,6 @@
-.servers__block-head {}
+.servers__block-head {
+    padding-right: 50px;
+    @media (max-width: $md - 1px){
+        padding-right: 0;
+    }
+}

@@ -1,1 +1,25 @@
-.servers__table-cell {}
+.servers__table-cell {
+  min-height: 52px;
+  @include py(10px);
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &_theme_column-head{
+    min-height: 48px;
+    box-sizing: content-box;
+    padding-top: 18px;
+    padding-bottom: 10px;
+  }
+
+  &_theme_dark-blue{
+    background: $servers__table-cell_theme_dark-blue--BGColor;
+    color: $servers__table-cell_theme_dark-blue--Color;
+  }
+
+  &_theme_light-blue{
+    background-color: $servers__table-cell_theme_light-blue--BGColor;
+  }
+}

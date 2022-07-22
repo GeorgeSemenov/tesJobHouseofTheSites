@@ -1,3 +1,4 @@
+include __row/servers__row.pug
 include __table-cell/servers__table-cell.pug
 include __table/servers__table.pug
 include __kvm-text/servers__kvm-text.pug
@@ -13,7 +14,5 @@ mixin servers(modifier)
     - modifier = {};
   section.servers&attributes(attributes)
     +block-head(modifier.blockHead)(class="servers__block-head")
-    +servers__pic(modifier)
-    +text-container(modifier.textContainer)(class="servers__text-container")
-    +servers__kvm-prices(modifier)
-    +servers__table(modifier)
+    +servers__row(modifier,"withPic")
+    +servers__row(modifier,"withTable")

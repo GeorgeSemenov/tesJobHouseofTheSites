@@ -1,1 +1,13 @@
-.servers__table {}
+.servers__table {
+  grid-template-columns: repeat(4, 170px);
+  display: grid;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  color: $servers__table--Color;
+  padding-left: 4px  ;
+
+  @media (max-width: $xl - 1px){
+      padding-left: 4;
+  }
+}

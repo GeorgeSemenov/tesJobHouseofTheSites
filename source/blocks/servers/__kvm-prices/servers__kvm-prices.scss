@@ -1,1 +1,9 @@
-.servers__kvm-prices {}
+.servers__kvm-prices {
+    position: relative;
+    top: -16px;
+    right: -2px;
+    width: 42%;
+    @media (max-width: $xl - 1px){
+        width: 100%;
+    }
+}

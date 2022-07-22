@@ -1,0 +1,13 @@
+.servers__row {
+  margin-bottom: 110px;
+  align-items: center;
+  display: flex;
+
+  &:last-child{
+    margin-bottom: 0 ; 
+  }
+
+  @media (max-width: $md - 1px){
+      margin-bottom: 25px ; 
+  }
+}

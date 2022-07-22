@@ -3,10 +3,10 @@
   font-size: 2rem;
   line-height: 150%;
   color: $text-container--Color;
-  padding-top: 100px;
-  @media (max-width: $lg - 1px){
+
+  @media (max-width: $xl - 1px){
     padding-top: 15px ;
-    margin-bottom: 15px;
+    margin-bottom: 35px;
   }
 }
 /*

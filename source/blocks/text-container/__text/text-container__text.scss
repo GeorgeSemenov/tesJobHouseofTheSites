@@ -1,6 +1,6 @@
 .text-container__text {
   margin-bottom: 23px ;
-  &:last-child{
+  &:last-of-type{
     margin-bottom: 0 ;
   }
 }

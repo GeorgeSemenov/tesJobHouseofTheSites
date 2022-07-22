@@ -1,1 +1,8 @@
-.servers__price-title {}
+.servers__price-title {
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $servers__price-title--Color;
+  margin-bottom: 42px;
+}

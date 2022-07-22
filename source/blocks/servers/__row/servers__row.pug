@@ -1,0 +1,8 @@
+mixin servers__row(modifier,rowType)
+  .servers__row&attributes(attributes)
+    if ( rowType == "withPic" ) 
+      +servers__pic(modifier)
+      +text-container(modifier.textContainer)(class="servers__text-container")
+    if ( rowType == "withTable" ) 
+      +servers__kvm-prices(modifier)
+      +servers__table(modifier)

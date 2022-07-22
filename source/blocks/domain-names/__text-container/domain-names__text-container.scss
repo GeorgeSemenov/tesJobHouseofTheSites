@@ -1,6 +1,8 @@
 .domain-names__text-container {
   width: 48%;
   display: inline-block;
+  padding-top: 100px;
+  width: 48%;
   @media (max-width: $xl - 1px){
     display: block;
     text-align: center;
