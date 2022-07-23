@@ -6,8 +6,9 @@
   line-height: 150%;
   color: $servers__table--Color;
   padding-left: 4px  ;
+  overflow-x: scroll;
 
-  @media (max-width: $xl - 1px){
-      padding-left: 4;
+  @media (max-width: $md - 1px){
+    width: 100%;
   }
 }

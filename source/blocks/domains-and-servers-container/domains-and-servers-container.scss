@@ -1,4 +1,20 @@
 .domains-and-servers-container {
   padding: 0;  
-  background: linear-gradient(180deg, rgba(124, 180, 216, 0.4) 0%, rgba(191, 230, 255, 0) 100%);
+  background: linear-gradient(180deg, rgba(124, 180, 216, 0.4) 0%, rgba(191, 230, 255, 0) 80%, #fff 100%);
+  position: relative;
+
+  &:before{
+    content: '';
+    background-image: url('../../img/domains-and-servers-background.webp');
+    width: 340px;
+    height: 340px;
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 0px;
+    background-repeat: no-repeat;
+    @media (max-width: $md - 1px){
+      display: none;
+    }
+  }
 }

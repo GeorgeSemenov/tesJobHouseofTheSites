@@ -6,7 +6,9 @@
   &:last-child{
     margin-bottom: 0 ; 
   }
-
+  @media (max-width: $xl - 1px){
+    flex-direction: column;
+  }
   @media (max-width: $md - 1px){
       margin-bottom: 25px ; 
   }

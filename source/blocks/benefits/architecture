@@ -1,0 +1,28 @@
+section.benefits{
+  block-head,
+  ul__benefits-list[benefits,benefit,li__benefit]{
+    li__benefit{
+      svg__benefit-pic<pic>
+      h3__benefit-title<title>
+      p__benefit-text<text>
+    }
+  }
+}
+
+{
+  blockHead:{
+    headTag: "",
+    text: "",
+    description: [//Массив параграфов описания
+      []//Массив чередующихся текстов, обычный и выделенный чередуются
+    ],
+  },
+  benefits:[
+    {
+      modifier:"",
+      pic: "",
+      title:"",
+      text:"",
+    },
+  ],
+}

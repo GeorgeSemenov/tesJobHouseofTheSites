@@ -22,4 +22,9 @@
   &_theme_light-blue{
     background-color: $servers__table-cell_theme_light-blue--BGColor;
   }
+
+  &_theme_blue{
+    background-color: $servers__table-cell_theme_blue--BGColor;
+    color: $servers__table-cell_theme_blue--Color;
+  }
 }

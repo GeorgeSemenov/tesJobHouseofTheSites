@@ -95,5 +95,6 @@ $servers__kvm-text--Color: $gray;
 $servers__table--Color: $gray;
 $servers__table-cell_theme_dark-blue--BGColor: $blue-darker;
 $servers__table-cell_theme_dark-blue--Color: $white;
-$servers__table-cell_theme_light-blue--BGColor: $blue;
-$servers__table-cell_theme_blue--BGColor: $blue-darker;
+$servers__table-cell_theme_light-blue--BGColor: rgba(103, 168, 210, 0.2);
+$servers__table-cell_theme_blue--BGColor: rgba(27, 86, 124, 0.8);
+$servers__table-cell_theme_blue--Color: $white;

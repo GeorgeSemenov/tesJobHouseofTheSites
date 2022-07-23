@@ -1,3 +1,6 @@
 .servers__pic {
     width: 42%;
+    @media (max-width: $xl - 1px) { 
+        width: auto;
+    }
 }
