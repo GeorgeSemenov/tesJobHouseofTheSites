@@ -1,0 +1,8 @@
+mixin benefits__benefits-list(modifier)
+  if modifier["benefits"] == undefined
+    - modifier["benefits"] = [{}];
+  ul.benefits__benefits-list&attributes(attributes)
+    each benefit in modifier.benefits
+      if benefit["modificator"] == undefined
+        - benefit["modificator"] = "";
+      +benefits__benefit(benefit)(class=benefit.modificator)

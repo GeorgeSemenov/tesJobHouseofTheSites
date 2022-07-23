@@ -1,0 +1,4 @@
+mixin benefits__benefit-text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  p.benefits__benefit-text&attributes(attributes)!=modifier.text

@@ -1,3 +1,10 @@
 .benefits {
-  padding: 0;  
+  padding-top: 67px;
+  background-color: $benefits--BGColor;
 }
+@import '__block_head/benefits__block_head';
+@import '__benefits-list/benefits__benefits-list';
+@import '__benefit/benefits__benefit';
+@import '__benefit-pic/benefits__benefit-pic';
+@import '__benefit-title/benefits__benefit-title';
+@import '__benefit-text/benefits__benefit-text';

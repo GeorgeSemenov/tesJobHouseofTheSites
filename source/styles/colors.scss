@@ -98,8 +98,11 @@ $servers__table-cell_theme_dark-blue--Color: $white;
 $servers__table-cell_theme_light-blue--BGColor: rgba(103, 168, 210, 0.2);
 $servers__table-cell_theme_blue--BGColor: rgba(27, 86, 124, 0.8);
 $servers__table-cell_theme_blue--Color: $white;
-$servers__table-cell_theme_light-blue--BGColor: $blue;
-$servers__table-cell_theme_blue--BGColor: $blue-darker;
+$servers__table-cell_left-divider--BGColor: $blue;
+
+$benefits--BGColor: rgba(103, 168, 210, 0.2);
+$benefits__benefit-title--Color: $gray;
+$benefits__benefit-text--Color: $gray-darker;
 
 $proposal-card--BGColor: $blue-darker;
 $proposal-card__text--Color: $white;

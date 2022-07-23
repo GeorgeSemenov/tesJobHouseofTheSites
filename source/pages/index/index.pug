@@ -5,6 +5,7 @@ include ../../blocks/hosting-prices/hosting-prices.pug
 include ../../blocks/CMS-support/CMS-support.pug
 include ../../blocks/ssl-cert/ssl-cert.pug
 include ../../blocks/domains-and-servers-container/domains-and-servers-container.pug
+include ../../blocks/benefits/benefits.pug
 include ../../blocks/ways-to-pay/ways-to-pay.pug
 
 doctype html
@@ -331,6 +332,31 @@ html(lang="ru")
             {modifier:"servers__table-cell_left-divider",buttonText: "Заказать VPS"},
           ],
         }
+      })
+      +benefits({
+        blockHead:{
+          text: "Выгоды нашего хостинга для Вас",
+        },
+        benefits:[
+          {
+            modifier:"",
+            pic: "lowPrices",
+            title:"Низкие цены",
+            text:"Доступные цены всегда были приоритетом нашей компании. Партнерская программа поможет сэкономить ещё больше.",
+          },
+          {
+            modifier:"",
+            pic: "case",
+            title:"Грамотная поддержка",
+            text:"Сотрудники с многолетним опытом в сфере хостинг услуг всегда оперативно помогут решить возникшие у клиентов трудности.",
+          },
+          {
+            modifier:"",
+            pic: "lock",
+            title:"Безопасность",
+            text:"Фильтрация паразитического трафика, защита от брут-форс атак помогут обеспечить сохранность данных клиентов.",
+          },
+        ],
       })
       +ways-to-pay({
         proposalCard: {

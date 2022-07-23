@@ -1,0 +1,11 @@
+mixin benefits__benefit-pic(modifier)
+  .benefits__benefit-pic&attributes(attributes)
+    case modifier.pic
+      when "lock"
+        +lock(modifier)
+      when "lowPrices"
+        +lowPrices(modifier)
+      when "case"
+        +case(modifier)
+      default
+        span Изображение не найденно или некоректно.

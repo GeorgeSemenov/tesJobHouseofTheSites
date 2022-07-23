@@ -1,5 +1,9 @@
 .servers {
   padding-top: 176px;
+  padding-bottom: 121px;
+  @media (max-width: $md - 1px){
+    padding: 15px 0px;
+  }
 }
 /*
 blockHead: {text:""},

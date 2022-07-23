@@ -1,2 +1,16 @@
+include __benefit-text/benefits__benefit-text.pug
+include __benefit-title/benefits__benefit-title.pug
+include __benefit-pic/benefits__benefit-pic.pug
+include __benefit/benefits__benefit.pug
+include __benefits-list/benefits__benefits-list.pug
+include ../block-head/block-head.pug
+include ../../img/SVG/lock.pug
+include ../../img/SVG/case.pug
+include ../../img/SVG/lowPrices.pug
 mixin benefits(modifier)
-  .benefits&attributes(attributes)
+  if modifier == undefined
+    - modifier = {};
+  section.benefits&attributes(attributes)
+    .content-container
+      +block-head(modifier.blockHead)(class="benefits__block-head")
+      +benefits__benefits-list(modifier)

@@ -1,5 +1,5 @@
 section.benefits{
-  block-head,
+  block-head<blockHead>,
   ul__benefits-list[benefits,benefit,li__benefit]{
     li__benefit{
       svg__benefit-pic<pic>
@@ -20,7 +20,7 @@ section.benefits{
   benefits:[
     {
       modifier:"",
-      pic: "",
+      pic: "lock/case/lowPrices",
       title:"",
       text:"",
     },
