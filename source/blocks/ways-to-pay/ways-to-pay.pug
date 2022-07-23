@@ -1,0 +1,13 @@
+include __pay-system-pic/ways-to-pay__pay-system-pic.pug
+include __pay-system/ways-to-pay__pay-system.pug
+include __pay-systems-grid/ways-to-pay__pay-systems-grid.pug
+include ../proposal-card/proposal-card.pug
+include ../block-head/block-head.pug
+mixin ways-to-pay(modifier)
+  if modifier == undefined
+    - modifier = {};
+  section.ways-to-pay&attributes(attributes)
+    .content-container
+      +proposal-card(modifier.proposalCard)(class="ways-to-pay__proposal-card")
+      +block-head(modifier.blockHead)(class="ways-to-pay__block-head")
+      +ways-to-pay__pay-systems-grid(modifier)

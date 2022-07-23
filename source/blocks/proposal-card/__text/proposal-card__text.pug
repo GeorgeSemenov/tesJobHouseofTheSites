@@ -1,0 +1,10 @@
+mixin proposal-card__text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  p.proposal-card__text&attributes(attributes)
+    each words, index in modifier.text
+      if index%2 == 0
+        |!{words}
+      else
+        span!=words
+

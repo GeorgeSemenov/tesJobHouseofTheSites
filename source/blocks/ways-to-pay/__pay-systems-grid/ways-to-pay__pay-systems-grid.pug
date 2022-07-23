@@ -1,0 +1,8 @@
+mixin ways-to-pay__pay-systems-grid(modifier)
+  if modifier["paySystems"] == undefined
+    - modifier["paySystems"] = [{}];
+  ul.ways-to-pay__pay-systems-grid&attributes(attributes)
+    each paySystem in modifier.paySystems
+      if paySystem["modificator"] == undefined
+        - paySystem["modificator"] = "";
+      +ways-to-pay__pay-system(paySystem)(class=paySystem.modificator)

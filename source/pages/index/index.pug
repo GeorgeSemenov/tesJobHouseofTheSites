@@ -5,6 +5,7 @@ include ../../blocks/hosting-prices/hosting-prices.pug
 include ../../blocks/CMS-support/CMS-support.pug
 include ../../blocks/ssl-cert/ssl-cert.pug
 include ../../blocks/domains-and-servers-container/domains-and-servers-container.pug
+include ../../blocks/ways-to-pay/ways-to-pay.pug
 
 doctype html
 html(lang="ru")
@@ -330,4 +331,35 @@ html(lang="ru")
             {modifier:"servers__table-cell_left-divider",buttonText: "Заказать VPS"},
           ],
         }
+      })
+      +ways-to-pay({
+        proposalCard: {
+          texts: [
+            {
+              modificator: "", 
+              text: ["Получите ","30 дней"," на тестирование нашего хостинга ","бесплатно"],
+            },
+            {
+              modificator: "proposal-card__text_width_medium", 
+              text: [" Плюс, ","100% гарантия возврата"," всех оплаченных денежных средств в этот период."],
+            },
+          ],
+          buttonText: "Попробовать хостинг",
+        },
+        blockHead: {
+          text: "Способы оплаты",
+          description: [
+           ["Оплачивайте услуги виртуального хостинга WSHOST любым, удобным для вас методом. Наш хостинг также могут заказать и оплатить юридические лица безналичным переводом"],
+          ],
+        },
+        paySystems: [
+          {modifier: "",href: "#!", pic: "webMoney",},
+          {modifier: "",href: "#!", pic: "ioMoney",},
+          {modifier: "",href: "#!", pic: "visa",},
+          {modifier: "",href: "#!", pic: "masterCard",},
+          {modifier: "",href: "#!", pic: "mir",},
+          {modifier: "",href: "#!", pic: "qiwi",},
+          {modifier: "",href: "#!", pic: "payPal",},
+          {modifier: "",href: "#!", pic: "sberBank",},
+        ],
       })

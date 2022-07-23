@@ -1,0 +1,9 @@
+include __text/proposal-card__text.pug
+include __texts/proposal-card__texts.pug
+include ../button/button.pug
+mixin proposal-card(modifier)
+  if modifier == undefined
+    - modifier = {};
+  .proposal-card&attributes(attributes)
+    +proposal-card__texts(modifier)
+    +button(modifier)(class="proposal-card__button button_theme_orange")
