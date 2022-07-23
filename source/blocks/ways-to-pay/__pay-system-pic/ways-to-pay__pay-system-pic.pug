@@ -1,0 +1,21 @@
+mixin ways-to-pay__pay-system-pic(modifier)
+  .ways-to-pay__pay-system-pic&attributes(attributes)
+    case modifier.pic
+      when "webMoney"
+        img(src=require('../../img/pay-systems/webmoney.webp') alt="webmoney")
+      when "ioMoney"  
+        img(src=require('../../img/pay-systems/ioMoney.webp') alt="ioMoney")
+      when "visa"
+        img(src=require('../../img/pay-systems/visa.webp') alt="visa")
+      when "masterCard"
+        img(src=require('../../img/pay-systems/masterCard.webp') alt="masterCard")
+      when "mir"
+        img(src=require('../../img/pay-systems/mir.webp') alt="mir")
+      when "qiwi"
+        img(src=require('../../img/pay-systems/qiwi.webp') alt="qiwi")
+      when  "payPal"
+        img(src=require('../../img/pay-systems/payPal.webp') alt="payPal")
+      when "sberBank"
+        img(src=require('../../img/pay-systems/sberBank.webp') alt="sberBank")
+      default
+        p Изображение не указанно, или указанно неверное изображение.

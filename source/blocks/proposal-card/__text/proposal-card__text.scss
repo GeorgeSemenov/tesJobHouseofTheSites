@@ -1,0 +1,23 @@
+.proposal-card__text {
+    margin-bottom: 18px;
+    color: $proposal-card__text--Color;
+    font-size: 2.4rem;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    span{
+        color: $proposal-card__text-highlighted--Color;
+    }
+    &:last-child{
+        margin-bottom: 0px ; 
+    }
+
+    &_width_medium{
+        width: 72%;
+        @media (max-width: $md - 1px){
+              width: 100%;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.proposal-card{
+  __texts[texts, text, p__text]{
+    p__text<text>
+  }
+  button<buttonText>
+}
+
+{
+  texts: [ //массив параграфов
+    {
+      modificator: "", 
+      text: [""],//Массив слов, которые чередуются с выделенными словами
+    },
+  ],
+  buttonText: "",
+}

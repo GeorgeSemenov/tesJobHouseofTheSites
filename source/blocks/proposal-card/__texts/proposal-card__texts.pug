@@ -1,0 +1,8 @@
+mixin proposal-card__texts(modifier)
+  if modifier["texts"] == undefined
+    - modifier["texts"] = [{}];
+  .proposal-card__texts&attributes(attributes)
+    each text in modifier.texts
+      if text["modificator"] == undefined
+        - text["modificator"] = "";
+      +proposal-card__text(text)(class=text.modificator)

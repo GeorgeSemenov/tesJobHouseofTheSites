@@ -1,0 +1,13 @@
+.proposal-card {
+  background-color:  $proposal-card--BGColor;
+  box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+  border-radius: 10px;
+  padding-top: 65px;
+  padding-bottom: 40px ;
+  text-align: center;
+  @include px(10px);
+  
+}
+@import '__texts/proposal-card__texts';
+@import '__text/proposal-card__text';
+@import '__button/proposal-card__button';

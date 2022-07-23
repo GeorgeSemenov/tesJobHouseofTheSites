@@ -1,0 +1,34 @@
+ways-to-pay{
+  proposal-card<proposalCard>
+  block-head<blockHead>
+  __pay-systems-grid[paySystems, paySystem, __paySystem]{
+    a__pay-system<paySystem>{
+      img__pay-system-pic<pic>
+    }
+}
+
+{
+  proposalCard: {
+    texts: [ //массив параграфов
+      {
+        modificator: "", 
+        text: [""],//Массив слов, которые чередуются с выделенными словами
+      },
+    ],
+    buttonText: "",
+  },
+  blockHead: {
+    headTag: "",
+    text: "",
+    description: [
+     [],
+    ],
+  },
+  paySystems: [
+    {
+      modifier: "",
+      href: "#!",
+      pic: "webMoney/ioMoney/visa/masterCard/mir/qiwi/payPal/sberBank",
+    },
+  ],
+}
