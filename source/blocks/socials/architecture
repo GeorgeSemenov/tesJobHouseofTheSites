@@ -1,0 +1,12 @@
+ul.socials[socials, soc, __social]{
+  li{
+    a__social
+  }
+}
+
+[
+  {
+    modificator: "",
+    pic: "tweeter/instagram/vk/facebook"
+  },
+],

@@ -1,0 +1,28 @@
+footer{
+  __logo-and-text-conteiner{
+    logotype
+    __text<text>
+  }
+  contacts<contacts>
+  socials-and-button<socials>
+  }
+}
+
+{
+  text:"",
+  contacts: [
+    {
+      link: "#!",
+      pic: 'mail/phone/location',
+      description: "текст сверху",
+      text: 'str',//текст по серединке
+      substr:['массив','контейнеров текста','которые чередуются с модификтором и без',],
+    },
+  ],
+  socials:[
+    {
+      modificator: "",
+      pic: "tweeter/instagram/vk/facebook"
+    },
+  ]
+}
