@@ -4,19 +4,24 @@ section.question-and-answers{
       h3__reviews-title<reviewTitle>
       text-container<textContainer>
     }
-    ul__review-cards[cards,card,li__review-card]{
-      p__review-card-text<text>
-      figure__review-user{
-        img__review-card<pic>
-        figcaption<sign>
+    ul__review-cards.swiper-wrapper[cards,card,__review-card]{
+      li__review-card.swiper-slide{
+        p__review-card-text<text>
+        figure__review-user{
+          img__review-card<pic>
+          figcaption<sign>
+        }
       }
-
     }
+    __review-pagination.swiper-pagination
   }
   block-head<blockHead>
   ul__accordeons[accordeons, accordeon, li__accordeon]{
     li__accordeon{
-      h3__accordeon-title<title>
+      __accordeon-title-container{
+        h3__accordeon-title<title>
+        __title-symbol
+      }
       p__accordeon-text<text>
     }
   }

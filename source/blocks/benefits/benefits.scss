@@ -1,6 +1,11 @@
 .benefits {
   padding-top: 67px;
+  padding-bottom: 89px;
   background-color: $benefits--BGColor;
+
+  @media (max-width: $md - 1px) { 
+    @include py(15px);
+  }
 }
 @import '__block_head/benefits__block_head';
 @import '__benefits-list/benefits__benefits-list';

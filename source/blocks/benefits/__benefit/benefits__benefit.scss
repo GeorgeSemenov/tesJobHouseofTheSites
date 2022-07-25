@@ -1,4 +1,11 @@
 .benefits__benefit {
     text-align: center;
     width: 260px;
+
+    @media (max-width: $lg - 1px) { 
+        margin-bottom: 30px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
 }
