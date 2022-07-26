@@ -1,0 +1,28 @@
+section.faq-section{
+  block-head<blockHead>
+  __accordeons[accordeons, accordeon, __accordeon-container]{
+    li__accordeon{
+      __accordeon-title-container{
+        __accordeon-toggle-symbol
+        h3__accordeon-title<title>
+      }
+      p__accordeon-text<text>
+    }
+  }
+}
+
+{
+  blockHead:{
+    headTag: "",
+    text: "",
+    description: [//Массив параграфов описания
+      []//Массив чередующихся текстов, обычный и выделенный чередуются
+    ],
+  },
+  accordeons:[
+    {
+      title: "",
+      text: "",
+    },
+  ],
+}

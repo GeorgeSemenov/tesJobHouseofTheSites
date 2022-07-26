@@ -1,0 +1,33 @@
+section.reviews-section{
+  __text-container{
+    h2__title<title>
+    __texts[texts, text, __text]{
+      p__text<text>
+    }
+  }
+  __reviews{
+    ul__review-cards[reviewCards, reviewCard, __review-card]{
+      li__review-card{
+        __quotes
+        __review-card-text<text>
+        figure__avatar-container{
+          __pic<pic>
+          figcaption__caption<caption>
+        }
+      }
+    }
+    __review-pagination
+  }
+}
+
+{
+  title:"",
+  texts: [""],
+  reviewCards: [
+    {
+      text: "",
+      pic: "blonde",
+      caption: ""
+    },
+  ],
+}

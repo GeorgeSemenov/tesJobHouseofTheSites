@@ -1,11 +1,22 @@
 footer{
-  __logo-and-text-conteiner{
+  __logo-and-text-container{
     logotype
     __text<text>
   }
   contacts<contacts>
-  socials-and-button<socials>
+  __socials-and-button{
+    socials<socials>
+    button
   }
+  __info-column<aboutCompany>{
+    h2__info-column-head<columnHead>
+    ul__info-items[infoItems, infoItem, __info-item]{
+      li__info-item{
+        a<itemHref,itemText>
+      }
+    }
+  }
+  __info-column<services>
 }
 
 {
@@ -24,5 +35,26 @@ footer{
       modificator: "",
       pic: "tweeter/instagram/vk/facebook"
     },
-  ]
+  ],
+  buttonText: "",
+  aboutCompany:{
+    columnHead: "",
+    infoItems: [
+      {
+        modificator: "",
+        itemText: "",
+        itemHref: "#!",
+      },
+    ],
+  },
+  services:{
+    columnHead: "",
+    infoItems: [
+      {
+        modificator: "",
+        itemText: "",
+        itemHref: "#!",
+      },
+    ],
+  },
 }
