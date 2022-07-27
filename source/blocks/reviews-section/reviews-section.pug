@@ -1,2 +1,18 @@
+include __review-pagination/reviews-section__review-pagination.pug
+include __caption/reviews-section__caption.pug
+include __pic/reviews-section__pic.pug
+include __avatar-container/reviews-section__avatar-container.pug
+include __review-card-text/reviews-section__review-card-text.pug
+include __review-card/reviews-section__review-card.pug
+include __review-cards/reviews-section__review-cards.pug
+include __reviews/reviews-section__reviews.pug
+include __text/reviews-section__text.pug
+include __texts/reviews-section__texts.pug
+include __title/reviews-section__title.pug
+include __text-container/reviews-section__text-container.pug
 mixin reviews-section(modifier)
-  .reviews-section&attributes(attributes)
+  if modifier == undefined
+    - modifier = {};
+  section.reviews-section&attributes(attributes)
+    +reviews-section__text-container(modifier)
+    +reviews-section__reviews(modifier)

@@ -1,0 +1,8 @@
+mixin reviews-section__texts(modifier)
+  if modifier["texts"] == undefined
+    - modifier["texts"] = [{}];
+  .reviews-section__texts&attributes(attributes)
+    each text in modifier.texts
+      if text["modificator"] == undefined
+        - text["modificator"] = "";
+      +reviews-section__text(text)(class=text.modificator)

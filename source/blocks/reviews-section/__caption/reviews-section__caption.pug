@@ -1,0 +1,4 @@
+mixin reviews-section__caption(modifier)
+  if modifier["poperty"] == undefined
+    - modifier["poperty"] = "";
+  figcaption.reviews-section__caption&attributes(attributes)!=modifier.caption

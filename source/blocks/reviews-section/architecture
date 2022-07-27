@@ -9,7 +9,7 @@ section.reviews-section{
     ul__review-cards[reviewCards, reviewCard, __review-card]{
       li__review-card{
         __quotes
-        __review-card-text<text>
+        p__review-card-text<text>
         figure__avatar-container{
           __pic<pic>
           figcaption__caption<caption>

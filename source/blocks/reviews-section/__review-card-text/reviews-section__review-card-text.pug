@@ -1,0 +1,4 @@
+mixin reviews-section__review-card-text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  p.reviews-section__review-card-text&attributes(attributes)!=modifier.text

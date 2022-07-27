@@ -1,0 +1,4 @@
+mixin reviews-section__text(modifier)
+  if modifier["text"] == undefined
+    - modifier["text"] = "empty__text";
+  p.reviews-section__text&attributes(attributes)!=modifier.text
