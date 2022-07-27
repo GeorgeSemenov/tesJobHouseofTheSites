@@ -1,1 +1,8 @@
-.reviews-section__text {padding: 0}
+.reviews-section__text {
+    margin-bottom: 23px;
+
+    &:last-child{margin-bottom: 0 ; }
+    @media (max-width: $md - 1px){
+          margin-bottom: 15px ; 
+    }
+}

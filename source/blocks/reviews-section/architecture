@@ -22,7 +22,12 @@ section.reviews-section{
 
 {
   title:"",
-  texts: [""],
+  texts: [
+    {
+      modifier: "",
+      text: "",
+    },
+  ],
   reviewCards: [
     {
       text: "",

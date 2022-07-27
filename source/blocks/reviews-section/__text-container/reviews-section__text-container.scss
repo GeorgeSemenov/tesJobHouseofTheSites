@@ -1,1 +1,9 @@
-.reviews-section__text-container {padding: 0}
+.reviews-section__text-container {
+    width: 42%;
+    @media (max-width: $xl - 1px){
+          width: auto;
+    }
+    @media (max-width: $md - 1px){
+          width: 100%;
+    }
+}

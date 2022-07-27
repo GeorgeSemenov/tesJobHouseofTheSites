@@ -14,5 +14,6 @@ mixin reviews-section(modifier)
   if modifier == undefined
     - modifier = {};
   section.reviews-section&attributes(attributes)
-    +reviews-section__text-container(modifier)
-    +reviews-section__reviews(modifier)
+    .content-container
+      +reviews-section__text-container(modifier)
+      +reviews-section__reviews(modifier)
