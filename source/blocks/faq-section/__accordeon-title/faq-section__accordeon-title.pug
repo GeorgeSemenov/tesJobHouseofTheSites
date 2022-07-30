@@ -1,0 +1,4 @@
+mixin faq-section__accordeon-title(modifier)
+  if modifier["title"] == undefined
+    - modifier["title"] = "empty__title";
+  h3.faq-section__accordeon-title&attributes(attributes)!=modifier.title

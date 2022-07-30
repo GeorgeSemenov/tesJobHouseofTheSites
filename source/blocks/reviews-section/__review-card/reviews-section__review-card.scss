@@ -3,7 +3,11 @@
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
     border-radius: 10px;
+    display: flex;
     text-align: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 9px;
 
     &:before{
         content: "";
@@ -15,5 +19,12 @@
         position: relative;
         top: -21px;
         margin-bottom: 9px;
+    }
+}
+
+
+.content-container{
+    .reviews-section__review-card {
+        height: auto;
     }
 }

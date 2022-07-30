@@ -6,3 +6,11 @@
         @include mx(auto);
     }
 }
+
+.content-container{
+    .reviews-section__review-cards{
+        padding-bottom: 50px;
+        height: auto;
+        margin-bottom: 13px ; 
+    }
+}

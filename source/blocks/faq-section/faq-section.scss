@@ -1,3 +1,10 @@
 .faq-section {
   padding: 0;  
 }
+@import '__block-head/faq-section__block-head';
+@import '__accordeons/faq-section__accordeons';
+@import '__accordeon/faq-section__accordeon';
+@import '__accordeon-title-container/faq-section__accordeon-title-container';
+@import '__accordeon-toggle-symbol/faq-section__accordeon-toggle-symbol';
+@import '__accordeon-title/faq-section__accordeon-title';
+@import '__accordeon-text/faq-section__accordeon-text';

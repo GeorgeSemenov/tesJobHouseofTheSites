@@ -109,6 +109,13 @@ $benefits__benefit_with-right-divider--BGColor: rgba(103, 168, 210, 0.3);
 $reviews-section--Color : $gray;
 $reviews-section__review-card: $white;
 $reviews-section__caption--Color: $gray-darker;
+$swiper-pagination-bullet--BGColor: $blue;
+$swiper-pagination-bullet-active--BGColor: $blue;
+
+$faq-section__accordeon-title-container--BGColor: $white;
+$faq-section__accordeon-title--Color: $blue-darker;
+$faq-section__accordeon-toggle-symbol-after-before--BGColor: $blue-darker;
+$faq-section__accordeon-toggle-symbol-after-before-hover--BGColor: lighten($orange, 15%);
 
 $proposal-card--BGColor: $blue-darker;
 $proposal-card__text--Color: $white;

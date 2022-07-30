@@ -1,2 +1,14 @@
+include __accordeon-text/faq-section__accordeon-text.pug
+include __accordeon-title/faq-section__accordeon-title.pug
+include __accordeon-toggle-symbol/faq-section__accordeon-toggle-symbol.pug
+include __accordeon-title-container/faq-section__accordeon-title-container.pug
+include __accordeon/faq-section__accordeon.pug
+include __accordeons/faq-section__accordeons.pug
+include ../block-head/block-head.pug
 mixin faq-section(modifier)
-  .faq-section&attributes(attributes)
+  if modifier == undefined
+    - modifier = {};
+  section.faq-section&attributes(attributes)
+    .content-container
+      +block-head(modifier.blockHead)(class="faq-section__block-head")
+      +faq-section__accordeons(modifier)

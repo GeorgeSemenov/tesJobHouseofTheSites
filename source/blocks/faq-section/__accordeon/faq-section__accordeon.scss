@@ -1,0 +1,7 @@
+.faq-section__accordeon {
+    min-width: 580px;
+    margin-bottom: 10px;
+    @media (max-width: $md - 1px){
+          min-width: 300px;
+    }
+}

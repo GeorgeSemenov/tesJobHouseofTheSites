@@ -1,0 +1,13 @@
+<snippet>
+  <content><![CDATA[
+Hello, ${1:this} is a ${2:snippet}.
+each ${1:item} in modifier.${2:${1:item}s}
+  if ${1:item}["modificator"] == undefined
+    - ${1:item}["modificator"] = "";
+  +${3:element}(${1:item})(class=${1:item}.modificator)
+]]></content>
+  <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+  <tabTrigger>each</tabTrigger>
+  <!-- Optional: Set a scope to limit where the snippet will trigger -->
+  <!-- <scope>source.python</scope> -->
+</snippet>

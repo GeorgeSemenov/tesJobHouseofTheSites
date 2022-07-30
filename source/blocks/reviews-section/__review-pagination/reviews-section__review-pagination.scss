@@ -1,1 +1,19 @@
-.reviews-section__review-pagination {padding: 0}
+.reviews-section__review-pagination {
+    display: flex;
+    justify-content: center;
+    
+    .swiper-pagination-bullet{
+        background-color: $swiper-pagination-bullet--BGColor;
+        display: block;
+        @include square(8px);
+        border-radius: 100%;
+        cursor: pointer;
+        opacity: 0.3;
+        margin-left: 13px;
+
+        &-active{
+            background-color: $swiper-pagination-bullet-active--BGColor;
+            opacity: 1;
+        }
+    }
+}

@@ -9,7 +9,11 @@
   border-radius: 5px;
   cursor: pointer;
   color: $button--Color;
-  &:hover{background-color: $button-hover--BGColor}
+  transition: .3s background-color;
+  &:hover{
+    background-color: $button-hover--BGColor; 
+    transition: .3s background-color;
+  }
   &:active{background-color: $button-active--BGColor}
   @media (max-width: $md - 1px){
     font-size: 2.5rem;

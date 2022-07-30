@@ -1,9 +1,8 @@
 .reviews-section__text-container {
     width: 42%;
+    flex-shrink: 0;
     @media (max-width: $xl - 1px){
-          width: auto;
-    }
-    @media (max-width: $md - 1px){
-          width: 100%;
+        width: 100%;
+        text-align: center;
     }
 }

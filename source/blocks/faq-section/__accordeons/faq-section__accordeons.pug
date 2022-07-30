@@ -1,0 +1,8 @@
+mixin faq-section__accordeons(modifier)
+  if modifier["accordeons"] == undefined
+    - modifier["accordeons"] = [{}];
+  ul.faq-section__accordeons&attributes(attributes)
+    each accordeon in modifier.accordeons
+      if accordeon["modificator"] == undefined
+        - accordeon["modificator"] = "";
+      +faq-section__accordeon(accordeon)(class=accordeon.modificator)
