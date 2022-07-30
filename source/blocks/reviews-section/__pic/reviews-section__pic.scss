@@ -1,1 +1,5 @@
-.reviews-section__pic {padding: 0}
+.reviews-section__pic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}

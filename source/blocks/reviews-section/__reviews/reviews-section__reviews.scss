@@ -1,9 +1,16 @@
 .reviews-section__reviews {
     width: 50%;
+
     @media (max-width: $xl - 1px){
           width: auto;
     }
     @media (max-width: $md - 1px){
           width: 100%;
+    }
+}
+
+.reviews-section{
+    .reviews-section__reviews{
+        padding-top: 33px;
     }
 }

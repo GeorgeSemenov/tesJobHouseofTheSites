@@ -3,4 +3,4 @@ mixin reviews-section__review-cards(modifier)
     - modifier["reviewCards"] = [{}];
   ul.reviews-section__review-cards&attributes(attributes)
     each  card in modifier.reviewCards
-      +reviews-section__review-card(card)(class=card.modificator)
+      +reviews-section__review-card(card)(class=("swiper-slide " + card.modificator) )

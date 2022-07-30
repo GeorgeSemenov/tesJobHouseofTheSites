@@ -1,1 +1,8 @@
-.reviews-section__review-cards {padding: 0}
+.reviews-section__review-cards {
+    width: 559px;
+    margin-left: 10px;
+
+    @media (max-width: $xl - 1px) { 
+        @include mx(auto);
+    }
+}
