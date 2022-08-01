@@ -1,7 +1,9 @@
 .faq-section__accordeon {
-    min-width: 580px;
-    margin-bottom: 10px;
+    width: 580px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 4px rgba(46, 46, 46, 0.27);
+    background-color: $faq-section__accordeon--BGColor;
     @media (max-width: $md - 1px){
-          min-width: 300px;
+          width: 300px;
     }
 }

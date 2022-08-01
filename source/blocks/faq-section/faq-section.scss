@@ -1,5 +1,26 @@
 .faq-section {
-  padding: 0;  
+  color: $faq-section--Color;
+  position: relative;
+  padding-bottom: 225px;
+
+  @media (max-width: $md - 1px) { 
+    padding-top: 15px;
+    padding-bottom: 65px  
+  }
+
+  &:before{
+    content:"";
+    display: block;
+    position: absolute;
+    @include wihe(260px, 312px);
+    background-repeat: no-repeat;
+    background-image: url("../../img/faq-background-image(gears).webp");
+    top: -180px;
+    left: 0;
+    @media (max-width: $md - 1px) { 
+      display: none;
+    }
+  }
 }
 @import '__block-head/faq-section__block-head';
 @import '__accordeons/faq-section__accordeons';
@@ -8,3 +29,4 @@
 @import '__accordeon-toggle-symbol/faq-section__accordeon-toggle-symbol';
 @import '__accordeon-title/faq-section__accordeon-title';
 @import '__accordeon-text/faq-section__accordeon-text';
+@import '__accordeons-column/faq-section__accordeons-column';

@@ -1,1 +1,32 @@
-.ways-to-pay__pay-system {padding: 0}
+.ways-to-pay__pay-system {
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+    &:before{
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        opacity: 0.6;
+        background-color: $ways-to-pay__pay-system-before--BGColor;
+        left: 0;
+        top: 0;
+    }
+
+    @media (min-width: $md){
+      &:first-child, &:nth-child(1n){
+        &:before{display: none;}
+      }
+    }
+    @media (min-width: $xl){
+      &:first-child, &:nth-child(5n){
+        &:before{display: none;}
+      }
+    }
+    @media (min-width: $lg){
+      &:first-child, &:nth-child(4n){
+        &:before{display: none;}
+      }
+    }
+}

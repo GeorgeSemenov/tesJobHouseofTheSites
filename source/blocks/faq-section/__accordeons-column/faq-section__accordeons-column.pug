@@ -1,0 +1,11 @@
+mixin faq-section__accordeons-column(modifier,isEven)
+  if modifier["accordeons"] == undefined
+      - modifier["accordeons"] = [{}];
+  ul.faq-section__accordeons-column&attributes(attributes)
+    each accordeon, index in modifier.accordeons
+      if accordeon["modificator"] == undefined
+        - accordeon["modificator"] = "";
+      if(isEven && (index%2 == 0))
+        +faq-section__accordeon(accordeon)(class=accordeon.modificator)  
+      if(!isEven && index%2 != 0)
+        +faq-section__accordeon(accordeon)(class=accordeon.modificator)

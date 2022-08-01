@@ -1,21 +1,20 @@
 mixin ways-to-pay__pay-system-pic(modifier)
-  .ways-to-pay__pay-system-pic&attributes(attributes)
-    case modifier.pic
-      when "webMoney"
-        img(src=require('../../img/pay-systems/webMoney.webp') alt="webmoney")
-      when "ioMoney"  
-        img(src=require('../../img/pay-systems/ioMoney.webp') alt="ioMoney")
-      when "visa"
-        img(src=require('../../img/pay-systems/visa.webp') alt="visa")
-      when "masterCard"
-        img(src=require('../../img/pay-systems/masterCard.webp') alt="masterCard")
-      when "mir"
-        img(src=require('../../img/pay-systems/mir.webp') alt="mir")
-      when "qiwi"
-        img(src=require('../../img/pay-systems/qiwi.webp') alt="qiwi")
-      when  "payPal"
-        img(src=require('../../img/pay-systems/payPal.webp') alt="payPal")
-      when "sberBank"
-        img(src=require('../../img/pay-systems/sberBank.webp') alt="sberBank")
-      default
-        p Изображение не указанно, или указанно неверное изображение.
+  case modifier.pic
+    when "webMoney"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/webMoney.webp') alt="webmoney")&attributes(attributes)
+    when "ioMoney"  
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/ioMoney.webp') alt="ioMoney")&attributes(attributes)
+    when "visa"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/visa.webp') alt="visa")&attributes(attributes)
+    when "masterCard"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/masterCard.webp') alt="masterCard")&attributes(attributes)
+    when "mir"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/mir.webp') alt="mir")&attributes(attributes)
+    when "qiwi"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/qiwi.webp') alt="qiwi")&attributes(attributes)
+    when  "payPal"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/payPal.webp') alt="payPal")&attributes(attributes)
+    when "sberBank"
+      img.ways-to-pay__pay-system-pic(src=require('../../img/pay-systems/sberBank.webp') alt="sberBank")&attributes(attributes)
+    default
+      p Изображение не указанно, или указанно неверное изображение.

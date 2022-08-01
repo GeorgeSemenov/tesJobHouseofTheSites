@@ -112,11 +112,15 @@ $reviews-section__caption--Color: $gray-darker;
 $swiper-pagination-bullet--BGColor: $blue;
 $swiper-pagination-bullet-active--BGColor: $blue;
 
-$faq-section__accordeon-title-container--BGColor: $white;
+$faq-section--Color: $gray;
+$faq-section__accordeon--BGColor: $white;
 $faq-section__accordeon-title--Color: $blue-darker;
 $faq-section__accordeon-toggle-symbol-after-before--BGColor: $blue-darker;
 $faq-section__accordeon-toggle-symbol-after-before-hover--BGColor: lighten($orange, 15%);
+$faq-section__accordeon-toggle-symbol_opened-after-before--BGColor: $orange;
 
 $proposal-card--BGColor: $blue-darker;
 $proposal-card__text--Color: $white;
 $proposal-card__text-highlighted--Color: $orange;
+
+$ways-to-pay__pay-system-before--BGColor: $blue;

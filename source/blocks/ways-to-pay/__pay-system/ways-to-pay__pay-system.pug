@@ -1,5 +1,6 @@
 mixin ways-to-pay__pay-system(modifier)
   if modifier["href"] == undefined
     - modifier["href"] = "#!";
-  a(href=modifier.href).ways-to-pay__pay-system&attributes(attributes)
-    +ways-to-pay__pay-system-pic(modifier)
+  li.ways-to-pay__pay-system&attributes(attributes)
+    a(href=modifier.href)
+      +ways-to-pay__pay-system-pic(modifier)

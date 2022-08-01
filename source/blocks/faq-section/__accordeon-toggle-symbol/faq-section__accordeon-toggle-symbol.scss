@@ -7,7 +7,7 @@
     $sybmolWidth: 31px;
     @include square($sybmolWidth);
     &:after,&:before{
-        transition: 0.3s background-color, .15s transform;
+        transition: 0.3s background-color .15s transform;
         position: absolute;
         display: block;
         content: "";
@@ -19,6 +19,7 @@
     &:after{
         left: 0px;
         transform: rotate(90deg);
+        transition: transform .3s;
     }
     &:before{
         transform: translateY(50%);
@@ -26,12 +27,24 @@
     }
     
 }
-
-.faq-section__accordeon-title-container:hover{
+@media (min-width: $lg){
+  .faq-section__accordeon-title-container:hover{
     .faq-section__accordeon-toggle-symbol {
         &:after,&:before{
             background-color: $faq-section__accordeon-toggle-symbol-after-before-hover--BGColor;
-            transition: 0.3s background-color;
+            transition: 0.3s background-color transform .3s;
         }
+    }
+  }
+}
+
+.faq-section__accordeon_opened{
+    .faq-section__accordeon-toggle-symbol:after{
+        transform: rotate(180deg);
+        transition: transform .3s;
+        background-color: $faq-section__accordeon-toggle-symbol_opened-after-before--BGColor;
+    }
+    .faq-section__accordeon-toggle-symbol:before{
+        background-color: $faq-section__accordeon-toggle-symbol_opened-after-before--BGColor;
     }
 }
