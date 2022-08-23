@@ -9,6 +9,7 @@ include ../../blocks/benefits/benefits.pug
 include ../../blocks/reviews-section/reviews-section.pug
 include ../../blocks/faq-section/faq-section.pug
 include ../../blocks/ways-to-pay/ways-to-pay.pug
+include ../../blocks/footer/footer.pug
 
 doctype html
 html(lang="ru")
@@ -444,4 +445,69 @@ html(lang="ru")
           {modifier: "",href: "#!", pic: "payPal",},
           {modifier: "",href: "#!", pic: "sberBank",},
         ],
+      })
+      +footer({
+        text:"WSHOST даёт возможность купить хостинг сайтов дешево с SSL и полноценным пакетом услуг. Дешевая регистрация доменов и недорогой хостинг позволяют создать сайт любой тематики. Мы занимаем лидирующие позиции в даной сфере. Нашими клиентами являются жители городов Москва, Санкт-Петербург и т.д. Выбирая наш php хостинг вы получаете премиум услуги по низкой цене.",
+        contacts: [
+          {
+            link: "#!",
+            pic: 'phone',
+            description: "Телефон в Москве:",
+            text: '+7 (495) 123-45-56',
+          },
+          {
+            link: "#!",
+            pic: 'mail',
+            description: "Электронная почта",
+            text: 'support@wshost.ru',
+          },
+          {
+            link: "#!",
+            pic: 'location',
+            description: "Адрес дата-ценра и офиса продаж",
+            text: 'г. Москва,  Варшавское шоссе, д. 125',
+            substr:['','Tехническая поддержка работает 24/7'],
+          },
+        ],
+        socials:[
+          {pic: "tweeter"},
+          {pic: "instagram"},
+          {pic: "vk"},
+          {pic: "facebook"},
+        ],
+        buttonText: "Report Spam",
+        infoColumns:[
+          {
+            columnHead: "О компании",
+            infoItems: [
+              {itemText: "О хостинг-провайдере",itemHref: "#!",},
+              {itemText: "Партнёрская программа",itemHref: "#!",},
+              {itemText: "Дата-центр",itemHref: "#!",},
+              {itemText: "Документы для клиентов",itemHref: "#!",},
+              {itemText: "Договор на услуги хостинга",itemHref: "#!",},
+              {itemText: "Способы оплаты",itemHref: "#!",},
+              {itemText: "Цены",itemHref: "#!",},
+              {itemText: "Акции",itemHref: "#!",},
+              {itemText: "Новости",itemHref: "#!",},
+              {itemText: "Вакансии",itemHref: "#!",},
+              {itemText: "Контакты",itemHref: "#!",},
+            ],
+          },
+          {
+            modificator: "footer__info-column_extra-items-gap",
+            columnHead: "Наши услуги",
+            infoItems: [
+              {itemText: "Виртуальный хостинг",itemHref: "#!",},
+              {itemText: "Хостинг для 1С-Битрикс",itemHref: "#!",},
+              {itemText: "Хостинг для Wordpress",itemHref: "#!",},
+              {itemText: "Аренда VPS",itemHref: "#!",},
+              {itemText: "Регистрация доменов",itemHref: "#!",},
+              {itemText: "SSL сертификаты",itemHref: "#!",},
+              {itemText: "Конструктор сайтов",itemHref: "#!",},
+            ],
+          },
+        ],
+        copyrights: '© 2007-2021 ООО "Вебсайт хостинг". Все права защищены.',
+        politicsName: "Политика конфиденциальности", 
+        politicsHref: "#!",
       })

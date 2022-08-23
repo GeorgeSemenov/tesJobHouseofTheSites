@@ -17,6 +17,10 @@ footer{
     }
   }
   __info-column<services>
+  __bottom-field{
+    p__copyrights<copyrights>
+    a__politics<politicsName, politicsHref>
+  }
 }
 
 {
@@ -33,28 +37,24 @@ footer{
   socials:[
     {
       modificator: "",
-      pic: "tweeter/instagram/vk/facebook"
+      pic: "tweeter/instagram/vk/facebook",
+      href: "#!",
     },
   ],
   buttonText: "",
-  aboutCompany:{
-    columnHead: "",
-    infoItems: [
-      {
-        modificator: "",
-        itemText: "",
-        itemHref: "#!",
-      },
-    ],
-  },
-  services:{
-    columnHead: "",
-    infoItems: [
-      {
-        modificator: "",
-        itemText: "",
-        itemHref: "#!",
-      },
-    ],
-  },
+  infoColumns:[
+    {
+      columnHead: "",
+      infoItems: [
+        {
+          modificator: "",
+          itemText: "",
+          itemHref: "#!",
+        },
+      ],
+    },
+  ],
+  copyrights: "",
+  politicsName: "", 
+  politicsHref: "#!",
 }

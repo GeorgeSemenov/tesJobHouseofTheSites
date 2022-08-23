@@ -1,0 +1,4 @@
+mixin footer__info-column-head(modifier)
+  if modifier["columnHead"] == undefined
+    - modifier["columnHead"] = "empty__columnHead";
+  h2.footer__info-column-head&attributes(attributes)!=modifier.columnHead

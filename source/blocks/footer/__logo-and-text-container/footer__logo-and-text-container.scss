@@ -1,0 +1,8 @@
+.footer__logo-and-text-container {
+  width: 490px;
+
+  @media (max-width: $xl - 1px) {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+}

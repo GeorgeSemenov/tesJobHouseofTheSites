@@ -1,2 +1,23 @@
+include __info-columns/footer__info-columns.pug
+include __politics/footer__politics.pug
+include __copyrights/footer__copyrights.pug
+include __bottom-field/footer__bottom-field.pug
+include __info-item/footer__info-item.pug
+include __info-items/footer__info-items.pug
+include __info-column-head/footer__info-column-head.pug
+include __info-column/footer__info-column.pug
+include __socials-and-button/footer__socials-and-button.pug
+include __text/footer__text.pug
+include __logo-and-text-container/footer__logo-and-text-container.pug
+include ../logotype/logotype.pug
+include ../contacts/contacts.pug
+include ../socials/socials.pug
+include ../button/button.pug
 mixin footer(modifier)
-  .footer&attributes(attributes)
+  footer.footer&attributes(attributes)
+    .content-container
+      +footer__logo-and-text-container(modifier)
+      +contacts(modifier)(class="footer__contacts contacts_theme_extra-margin-bottom contacts_theme_footer")
+      +footer__socials-and-button(modifier)
+      +footer__info-columns(modifier)
+      +footer__bottom-field(modifier)

@@ -14,18 +14,18 @@
         top: 0;
     }
 
-    @media (min-width: $md){
+    @media (max-width: $md - 1px){
       &:first-child, &:nth-child(1n){
         &:before{display: none;}
       }
     }
-    @media (min-width: $xl){
-      &:first-child, &:nth-child(5n){
+    @media (max-width: $lg - 1px) and (min-width: $md ){
+      &:first-child, &:nth-child(3n+1){
         &:before{display: none;}
       }
     }
     @media (min-width: $lg){
-      &:first-child, &:nth-child(4n){
+      &:first-child, &:nth-child(5n){
         &:before{display: none;}
       }
     }

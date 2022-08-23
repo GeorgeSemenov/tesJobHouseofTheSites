@@ -1,0 +1,13 @@
+mixin socials__social(modifier)
+  if modifier["href"] == undefined
+    - modifier["href"] = "#!";
+  a.socials__social(href=modifier.href)&attributes(attributes)
+    case modifier.pic
+      when "tweeter"
+        +twitter(modifier)
+      when "instagram"
+        +instagram(modifier)
+      when "vk"
+        +VK(modifier)
+      when "facebook"
+        +facebook(modifier)

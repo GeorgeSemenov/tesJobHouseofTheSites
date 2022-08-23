@@ -1,0 +1,12 @@
+.footer__info-column {
+    padding: 0;
+}
+
+.footer__info-column + .footer__info-column{
+    margin-left: 100px;
+    @media (max-width: $md - 1px) { 
+      margin-right: 0;
+      margin-top: 15px;
+      margin-left: 0;
+    }
+}

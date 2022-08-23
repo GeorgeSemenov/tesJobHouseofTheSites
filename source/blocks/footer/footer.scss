@@ -1,3 +1,30 @@
 .footer {
-  padding: 0;  
+  padding-top: 90px;
+  color: $footer--Color;
+  font-size: 16px;
+  background-color: $footer--BGColor;
+  .content-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @media (max-width: $xl - 1px) { 
+      justify-content: flex-start;
+    }
+  }
 }
+@import '__logo-and-text-container/footer__logo-and-text-container';
+@import '__logotype/footer__logotype';
+@import '__text/footer__text';
+@import '__contacts/footer__contacts';
+@import '__socials-and-button/footer__socials-and-button';
+@import '__socials/footer__socials';
+@import '__button/footer__button';
+@import '__info-column/footer__info-column';
+@import '__info-column-head/footer__info-column-head';
+@import '__info-items/footer__info-items';
+@import '__info-item/footer__info-item';
+@import '__bottom-field/footer__bottom-field';
+@import '__copyrights/footer__copyrights';
+@import '__politics/footer__politics';
+@import '__info-columns/footer__info-columns';

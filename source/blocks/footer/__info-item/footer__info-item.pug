@@ -1,0 +1,7 @@
+mixin footer__info-item(modifier)
+  if modifier["itemText"] == undefined
+    - modifier["itemText"] = "empty__itemText";
+  if modifier["itemHref"] == undefined
+    - modifier["itemHref"] = "#!";
+  li.footer__info-item&attributes(attributes)
+    a(href=modifier.itemHref)!=modifier.itemText

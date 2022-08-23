@@ -1,2 +1,14 @@
+include __social/socials__social.pug
+include ../../img/SVG/twitter.pug
+include ../../img/SVG/instagram.pug
+include ../../img/SVG/VK.pug
+include ../../img/SVG/facebook.pug
 mixin socials(modifier)
-  .socials&attributes(attributes)
+  if modifier == undefined
+    - modifier = [{}];
+  ul.socials&attributes(attributes)
+    each soc in modifier
+      if soc["modificator"] == undefined
+        - soc["modificator"] = "";
+      li
+        +socials__social(soc)(class=soc.modificator)

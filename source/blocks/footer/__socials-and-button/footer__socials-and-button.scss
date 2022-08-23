@@ -1,0 +1,6 @@
+.footer__socials-and-button {
+    text-align: right;
+    @media (max-width: $md - 1px) { 
+        text-align: left;
+    }
+}

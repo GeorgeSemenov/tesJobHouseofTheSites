@@ -1,0 +1,6 @@
+mixin footer__politics(modifier)
+  if modifier["politicsName"] == undefined
+    - modifier["politicsName"] = "empty__politicsName";
+  if modifier["politicsHref"] == undefined
+    - modifier["politicsHref"] = "#!";
+  a.footer__politics(href=modifier.politicsHref)&attributes(attributes)!=modifier.politicsName

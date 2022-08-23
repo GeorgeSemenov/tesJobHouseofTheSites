@@ -1,0 +1,12 @@
+.footer__info-item {
+    margin-bottom: 8px;
+    &:last-child{
+        margin-bottom: 0;
+    }
+}
+
+.footer__info-column_extra-items-gap{
+  .footer__info-item {
+    margin-bottom: 11px;
+  }
+}

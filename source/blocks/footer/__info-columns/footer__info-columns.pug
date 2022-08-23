@@ -1,0 +1,8 @@
+mixin footer__info-columns(modifier)
+  if modifier["infoColumns"] == undefined
+    - modifier["infoColumns"] = [{}];
+  .footer__info-columns&attributes(attributes)
+    each infoColumn  in modifier.infoColumns
+      if infoColumn["modificator"] == undefined
+        - infoColumn["modificator"] = "";
+      +footer__info-column(infoColumn)(class=infoColumn.modificator)

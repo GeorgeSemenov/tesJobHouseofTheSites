@@ -1,1 +1,9 @@
-.contacts__description {}
+.contacts__description {
+
+}
+
+.contacts_theme_footer{
+  .contacts__description {
+    color: $contacts_theme_footer__description--Color;
+  }
+}

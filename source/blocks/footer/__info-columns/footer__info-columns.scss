@@ -1,0 +1,16 @@
+.footer__info-columns {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 73px;
+  margin-bottom: 40px;
+  @media (max-width: $xl - 1px) { 
+/*     justify-content: space-around; */
+  }
+  @media (max-width: $md - 1px) { 
+      margin-top: 15px;
+      margin-bottom: 15px;
+      justify-content: space-between;
+  }
+}

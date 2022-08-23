@@ -1,3 +1,13 @@
 .socials {
-  padding: 0;  
+  display: flex;
+  justify-content: space-between;
+
+  li{
+    margin-right: 19px;
+
+    &:last-child{
+      margin-right: 0px;
+    }
+  }
 }
+@import '__social/socials__social';

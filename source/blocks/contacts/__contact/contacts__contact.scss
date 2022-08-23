@@ -5,3 +5,10 @@
     display: flex;
   }
 }
+
+.contacts_theme_extra-margin-bottom{
+  .contacts__contact {
+    margin-bottom: 24px;
+    &:last-child{margin-bottom: 0px;}
+  }
+}

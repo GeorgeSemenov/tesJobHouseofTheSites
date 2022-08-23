@@ -1,0 +1,8 @@
+mixin footer__info-items(modifier)
+  if modifier["infoItems"] == undefined
+    - modifier["infoItems"] = [{}];
+  ul.footer__info-items&attributes(attributes)
+    each infoItem  in modifier.infoItems
+      if infoItem["modificator"] == undefined
+        - infoItem["modificator"] = "";
+      +footer__info-item(infoItem)(class=infoItem.modificator)

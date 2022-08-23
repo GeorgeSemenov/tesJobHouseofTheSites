@@ -1,0 +1,4 @@
+mixin footer__copyrights(modifier)
+  if modifier["copyrights"] == undefined
+    - modifier["copyrights"] = "empty__copyrights";
+  p.footer__copyrights&attributes(attributes)!=modifier.copyrights
