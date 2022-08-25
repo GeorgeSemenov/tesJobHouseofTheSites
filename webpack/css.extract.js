@@ -10,12 +10,15 @@ module.exports = function(){//Тут почему не нужен paths возм
 					test: /\.scss$/,
 					use: [
 						'style-loader', 
-						ExtractTextPlugin.loader, 
+						{
+							loader: ExtractTextPlugin.loader,
+							options: {publicPath: '../'},//Это нужно чтобы background-image: url - имел корректный адрес, для всех картинок publicPath устанавливется в webpack.config, а для тех, что используются в стилях - будет применяться этот publickPath.
+						},
 						{
 							loader: 'css-loader',
 							options:{
-							sourceMap: true,
-						}
+								sourceMap: true,
+							}
 						}, 
 						{
 							loader: 'sass-loader',
@@ -29,7 +32,10 @@ module.exports = function(){//Тут почему не нужен paths возм
 					test: /\.css$/,
 					use: [
 						'style-loader', 
-						ExtractTextPlugin.loader, 
+						{
+							loader: ExtractTextPlugin.loader,
+							options: {publicPath: '../'},
+						}, 
 						{
 							loader: 'css-loader',
 							options:{

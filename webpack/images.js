@@ -7,7 +7,7 @@ module.exports = function(){
 			rules: [//тут указываем массив настроек для лоадеров
 				{//Тут описываем настройки лоадера
 					test: /\.(jpg|png|svg|webp)$/,
-					type: "asset",//automatically chooses between exporting a data URI and emitting a separate file. Previously achievable by using url-loader with asset size limit.
+					type: "asset/resource",//automatically chooses between exporting a data URI and emitting a separate file. Previously achievable by using url-loader with asset size limit.
 					// loader:'file-loader',
 				}
 			]
