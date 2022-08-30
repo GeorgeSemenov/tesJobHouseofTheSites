@@ -69,7 +69,7 @@ const common= merge([//модуль merge -  заменяет метод Objects
 module.exports = function(env,argv){
 	//Напомню что mode:production автоматически минифицирует код.
 	common.mode = argv.mode;//Инициализируем режим development или prodaction в объекте common чтобы webpack знал как собирать проект, если эту строку убрать, то консоль выдаст ошибку, т.к. объект common инициализировани не в соотвествии с API webpack'a(т.к. там некорректно инициализирован ключ mode)
-	console.log(`Знаешь ли ты что mode = ${argv.mode}`);
+	console.log(`Знаешь ли ты, что mode = ${argv.mode}`);
 	if (argv.mode === 'production'){// argv.mode - параметр который передаётся в npm scripts - загляни в package.jsone
 		common.devtool = false;//сорсмап создаваться не будет
 		common.output.publicPath = "./"; //Указываем нормальный пукть, чтобы сборка была человеческой

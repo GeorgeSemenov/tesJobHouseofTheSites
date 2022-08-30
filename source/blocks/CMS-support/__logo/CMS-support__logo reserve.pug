@@ -1,0 +1,31 @@
+mixin CMS-support__logo(modifier)
+  li.CMS-support__logo&attributes(attributes)
+    case modifier.logo
+      when "1c"
+        img(src=require('../../img/partners-logos/1c.webp') alt="1c")
+      when "DLE"
+        img(src=require('../../img/partners-logos/DLE.webp') alt="DLE")
+      when "drupal"
+        img(src=require('../../img/partners-logos/drupal.webp') alt="drupal")
+      when "hostcms"
+        img(src=require('../../img/partners-logos/hostcms.webp') alt="hostcms")
+      when "instantCMS"
+        img(src=require('../../img/partners-logos/instantCMS.webp') alt="instantCMS")
+      when "Joomla"
+        img(src=require('../../img/partners-logos/Joomla.webp') alt="Joomla")
+      when "MODX"
+        img(src=require('../../img/partners-logos/MODX.webp') alt="MODX")
+      when "netcat"
+        img(src=require('../../img/partners-logos/netcat.webp') alt="netcat")
+      when "opencart"
+        img(src=require('../../img/partners-logos/opencart.webp') alt="opencart")
+      when "phpBB"
+        img(src=require('../../img/partners-logos/phpBB.webp') alt="phpBB")
+      when "prestashop"
+        img(src=require('../../img/partners-logos/prestashop.webp') alt="prestashop")
+      when "shopscript"
+        img(src=require('../../img/partners-logos/shopscript.webp') alt="shopscript")
+      when "umiCMS"
+        img(src=require('../../img/partners-logos/umiCMS.webp') alt="umiCMS")
+      when "WordPress"
+        img(src=require('../../img/partners-logos/WordPress.webp') alt="WordPress")
